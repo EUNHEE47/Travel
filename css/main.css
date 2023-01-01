@@ -27,12 +27,11 @@ body{
 
 #header {
   position: relative;
-  /* border: 1px solid white; */
+  border: 1px solid white;
 }
 
 #header .main-top{
   /* border: 1px solid white; */
-  background-color: black;
   position: fixed;
   left: 0;
   display: flex;
@@ -41,15 +40,13 @@ body{
   width: 100%;
   vertical-align: middle;
   font-size: 30px;
-}
-
-.logo-img{
-  /* border: 1px solid white; */
+  z-index: 99;
 }
 
 a{
   text-decoration: none;
   color: white;
+  font-weight: bolder;
 }
 
 .main-nav-left ul {
@@ -78,7 +75,8 @@ a{
 
 .video video{
   width: 100%;
-  margin-top: 90px;
+  height: 100vh;
+  object-fit: cover;
 }
 
 .top-btn{
