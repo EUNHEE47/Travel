@@ -83,7 +83,7 @@ a{
   position: fixed;
   right: 45px;
   bottom: 45px;
-  font-size: 20px;
+  font-size: 30px;
   color: black;
   border-radius: 100%;
 }
@@ -93,6 +93,6 @@ a{
 }
 
 #second-page{
-  border: 1px solid white;
-  display: flex;
+  border: 1px solid yellow;
 }
+.s-l-bgi
