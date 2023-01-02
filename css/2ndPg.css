@@ -1,0 +1,87 @@
+#second-page{
+  border: 1px solid yellow;
+  height: 600px;
+  margin: 150px 120px;
+  display: flex;
+}
+
+.s-left-bgi{
+  border: 1px solid white;
+  width: 40%;
+  background-image: url(../img/airB2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.left-aside{
+  background-color: rgba(59, 58, 58, 0.7);
+  border-radius: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 70%;
+}
+
+.left-aside p{
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.air-search1, .air-search2{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.air-search1 input, .air-search2 input{
+  width: 80%;
+  height: 30px;
+  text-align: center;
+}
+
+.air-select-dep, .air-select-dep-date{
+  text-align: center;
+}
+
+.air-icon, .date-icon{
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+}
+
+.air-select-arr, .air-select-arr-date{
+  text-align: center;
+}
+
+.air-search3, .air-search4{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.air-select-pax-cls span{
+  margin-right: 50px;
+}
+
+.air-search3 input{
+  width: 100px;
+  height: 30px;
+  text-align: center;
+}
+
+.air-search4 span{
+  background-color: black;
+  border: 1px solid black;
+  font-size: 30px;
+  border-radius: 20px;
+}
+
+.air-search4 span:hover{
+  background-color: white;
+  color: black;
+}

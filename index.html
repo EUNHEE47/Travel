@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Travel</title>
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/2ndPg.css">
   <script src="https://kit.fontawesome.com/101aaed8de.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -47,13 +48,49 @@
       </div>
 
       <section id="second-page">
-        <div class="s-l-bgi">
-          <div class="l-aside">
-            <p>항공</p>
+        <div class="s-left-bgi">
+          <div class="left-aside">
+            <p>항공권</p>
+            
+            <form class="air-search1">
+              <div class="air-select-dep">
+                <span><label for="dep">출발지</label></span><br>
+                <input id="dep" type="text" placeholder="서울(SEL)">
+              </div>
+              <div class="air-icon">
+                <i class="fa-solid fa-plane"></i>
+                </div>
+              <div class="air-select-arr">
+                <span><label for="arr">도착지</label></span><br>
+                <input id="arr" type="text" placeholder="파리(PAR)">
+              </div>   
+            </form>
+            <form class="air-search2">
+              <div class="air-select-dep-date">
+                <span><label for="depdate">출발일</label></span><br>
+                <input id="depdate" type="text" placeholder="2023.01.01">
+              </div>
+              <div class="date-icon">
+                <i class="fa-solid fa-minus"></i>
+              </div>
+              <div class="air-select-arr-date">
+                <span><label for="arrdate">도착일</label></span><br>
+                <input id="arrdate" type="text" placeholder="2023.12.31">
+              </div>
+            </form>
+            <form class="air-search3">
+              <div class="air-select-pax-cls">
+                <span>인원/좌석등급</span>
+                <input type="text" placeholder="1명,일반석">
+              </div>
+            </form>
+            <div class="air-search4">
+             <span>항공권 검색</span>
+            </div>
           </div>          
         </div>
-        <div class="r-aside">
 
+        <div class="r-aside">
         </div>
       </section>
 
