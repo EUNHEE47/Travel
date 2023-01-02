@@ -27,7 +27,15 @@ body{
 
 #header {
   position: relative;
-  border: 1px solid white;
+}
+
+.logo-img a{
+  font-size: 70px;
+  color: #d0cef6;
+}
+
+.logo-img a:hover{
+  color: #25aae8;
 }
 
 #header .main-top{
@@ -51,11 +59,14 @@ a{
 
 .main-nav-left ul {
   display: flex;
+  font-family: 'twayair';
 }
+
 
 .main-nav-left ul li {
   padding: 10px;
   list-style-type: none;
+  font-size: 20px;
 }
 
 .main-nav-right ul {
@@ -66,6 +77,15 @@ a{
   padding: 10px;
   list-style-type: none;
 }
+
+.main-ul-left a:hover{
+  color: #25aae8;
+}
+
+.main-ul-right a:hover{
+  color: #25aae8;
+}
+
 
 .video{
   width: 100%;
@@ -82,13 +102,11 @@ a{
 .top-btn{
   position: fixed;
   right: 45px;
-  bottom: 45px;
+  bottom: 60px;
   font-size: 30px;
-  color: black;
   border-radius: 100%;
 }
 
-.top-btn:hover{
-  border: 1px solid white;
+.top-btn a:hover{
+  color: #25aae8;
 }
-
