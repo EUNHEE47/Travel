@@ -5,8 +5,8 @@
   font-style: normal;
 }
 
-#second-page{
-  /* border: 1px solid yellow; */
+#air-page{
+  border: 1px solid yellow;
   height: 650px;
   margin: 150px 120px;
   display: flex;
