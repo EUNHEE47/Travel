@@ -6,7 +6,7 @@
 }
 
 #air-page{
-  border: 1px solid yellow;
+  /* border: 1px solid yellow; */
   height: 650px;
   margin: 150px 120px;
   display: flex;
@@ -24,7 +24,7 @@
 }
 
 .left-aside{
-  background-color: rgba(59, 58, 58, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
   border-radius: 20px;
   position: absolute;
   left: 50%;
@@ -93,21 +93,23 @@
 
 
 
-.air-search4 span{
+.air-search4 input{
   background-color: black;
   border: 1px solid black;
   font-size: 25px;
   border-radius: 20px;
   padding: 10px;
+  color: white;
 }
 
-.air-search4 span:hover{
+.air-search4 input:hover{
+  border: 1px solid #d0cef6;
   background-color: #d0cef6;
   color: black;
   cursor: pointer;
 }
 
-.right-aside{
+.air-right-aside{
   /* border: 1px solid white; */
   width: 60%;
   height: 100%;
@@ -123,7 +125,7 @@
 
 }
 
-.right-aside img{
+.air-right-aside img{
   width: 100%;
   height: 100%;
 }
