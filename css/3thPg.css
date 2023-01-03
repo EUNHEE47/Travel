@@ -1,14 +1,8 @@
-@font-face {
-  font-family: 'twayair';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twayair.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
 
 #hotel-page{
  /* border: 1px solid white; */
  height: 650px;
- margin: 150px 120px;
+ margin: 300px 120px 200px 120px;
  display: flex;
  justify-content: space-between;
  align-items: center;
@@ -44,6 +38,7 @@
   background-size: cover;
   background-position: center;
   position: relative;
+  margin-left: 1px;
 }
 
 .hotel-right-aside{
@@ -73,7 +68,7 @@
   margin-top: 20px;
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   text-align: center;
 }
 
@@ -114,4 +109,5 @@
   background-color: #d0cef6;
   color: black;
   cursor: pointer;
+  transition: all 0.5s;
 }

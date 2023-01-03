@@ -1,0 +1,148 @@
+#promotion, #notice{
+  /* border: 1px solid white; */
+  width: 100%;
+  font-family: 'Teko', sans-serif;
+}
+
+
+.promotion-title{
+  display: flex;
+  margin: 30px 100px;
+  font-size: 35px;
+  font-family: 'twayair';
+}
+
+.promotion-title h1{
+  margin-right: 20px;
+}
+
+
+.promotion-link{
+  margin: 30px 80px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card{
+  border: 1px solid #d0cef6;
+  background-color: black;
+  width: 300px;
+  height: 328px;
+}
+
+.card:hover{
+  background-color: #d0cef6;
+  color: black;
+  transition: all 0.5s;
+}
+
+.card img{
+  width: 100%;
+}
+
+.card-body p:first-child{
+  text-align: left;
+  font-family: 'twayair';
+  font-size: 20px;
+}
+
+.card-body p:last-child{
+  font-family: 'twayair';
+  font-size: 15px;
+}
+
+
+#notice-title {
+  border: 1px solid white;  
+  margin-top: 150px;
+  width: 100%;
+  font-family: 'twayair';
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.notice {
+  border: 1px solid white;
+  padding: 30px;
+}
+
+.notice h1{
+  font-size: 40px;
+  text-align: center;
+}
+
+.notice i{
+  color: rgb(216, 15, 15);
+}
+
+
+.notice ul li{
+  border-bottom: 1px solid #d0cef6;
+  list-style-type: square;
+  padding: 15px;
+}
+
+.notice ul li:hover{
+  color: #d0cef6;
+  transition: all 0.5s;
+}
+
+.info{
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+}
+
+.tel{
+  border: 1px solid white;
+  padding: 30px;
+  vertical-align: middle;
+}
+
+.tel i{
+  color: rgb(235, 235, 69);
+}
+
+.tel h1 {
+  font-size: 45px;
+  text-align: center;
+}
+
+.tel p:nth-child(2){
+  text-align: center;
+  font-size: 20px;
+}
+
+.tel p{
+  text-align: center;
+  font-size: 15px;
+}
+
+.app{
+  border: 1px solid white;
+  text-align: center;
+  padding: 30px;
+}
+
+.app-btn{
+  border: 1px solid #d0cef6;
+  background-color: #d0cef6;
+  color: black;
+  border-radius: 10px;
+  font-size: 15px;
+  margin: 3px;
+  padding: 5px;
+}
+
+.app-btn:hover{
+  color: white;
+  background-color: black;
+  border: 1px solid black;
+  transition: all 0.5s;
+}
+
+.link-btn{
+  border: 1px solid white;
+  padding: 5px;  
+}

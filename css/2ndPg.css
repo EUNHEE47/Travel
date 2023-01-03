@@ -8,7 +8,7 @@
 #air-page{
   /* border: 1px solid yellow; */
   height: 650px;
-  margin: 150px 120px;
+  margin: 300px 120px;
   display: flex;
   justify-content: space-between;
   font-family: 'twayair';
@@ -21,6 +21,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  margin-right: 1px;
 }
 
 .left-aside{
@@ -107,6 +108,7 @@
   background-color: #d0cef6;
   color: black;
   cursor: pointer;
+  transition: all 0.5s;
 }
 
 .air-right-aside{

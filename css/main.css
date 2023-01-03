@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
 
 body{
@@ -29,13 +30,21 @@ body{
   position: relative;
 }
 
+.main-ul-left a, .main-ul-right a{
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+
 .logo-img a{
-  font-size: 50px;
+  font-size: 70px;
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  font-weight: bolder;
 }
 
 .logo-img a:hover{
   color: #d0cef6;
+  transition: all 0.5s;
 }
 
 #header .main-top{
@@ -54,7 +63,6 @@ body{
 a{
   text-decoration: none;
   color: white;
-  font-weight: bolder;
 }
 
 .main-nav-left ul {
@@ -84,10 +92,12 @@ a{
 
 .main-ul-left a:hover{
   color: #d0cef6;
+  transition: all 0.5s;
 }
 
 .main-ul-right a:hover{
   color: #d0cef6;
+  transition: all 0.5s;
 }
 
 
@@ -113,4 +123,5 @@ a{
 
 .top-btn a:hover{
   color: #d0cef6;
+  transition: all 0.5s;
 }
