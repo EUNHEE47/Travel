@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/airPg.css">
   <link rel="stylesheet" href="css/hotelPg.css">
-  <link rel="stylesheet" href="css/4th.css">
+  <link rel="stylesheet" href="css/promotionPg.css">
   <link rel="stylesheet" href="css/footer.css">
   <script src="https://kit.fontawesome.com/101aaed8de.js" crossorigin="anonymous"></script>
 </head>
@@ -22,7 +22,7 @@
       <div id="header">
         <div class="main-top">
           <div class="main-nav-left">
-            <ul class="main-ul-left">
+            <ul class="main-nav-left-ul">
               <li><a href="#">항공</a></li>
               <li><a href="#">호텔</a></li>
               <li><a href="#">기획전</a></li>
@@ -33,7 +33,7 @@
             <a href="#">Logo</a>
           </div>
           <div class="main-nav-right">
-            <ul class="main-ul-right">
+            <ul class="main-nav-right-ul">
               <li><a href="#">MY PAGE</a></li>
               <li><a href="#">LOGIN</a></li>
               <li><a href="#">JOIN</a></li>
@@ -41,65 +41,63 @@
           </div>
         </div>
 
-        <section class="video">
+        <div class="video">
           <video autoplay controls loop muted>
             <source src="img/video1.mp4">
           </video>
-        </section>
+        </div>
 
         <div class="top-btn">
           <a href="#"><i class="fa-solid fa-plane-up"></i></a>
         </div>
       </div>
 
-      <div class="air-page-main">
-        <div class="aaaaa">
-          ddd
-        </div>
-        <section id="air-page">
+
+      <section id="air-page">
+        <div class="inner-air-page">
           <div class="air-left-bgi">
             <div class="air-left-aside">
               <p>항공권</p>            
-              <form class="air-search1">
+              <form class="air-search-city">
                 <div class="air-select-dep">
                   <span><label for="dep">출발지</label></span><br>
-                  <input id="dep" type="text" placeholder="서울(SEL)">
-                </div>
-                <div class="air-icon">
+                  <input id="dep" type="button" value="서울(SEL)">
+                 </div>
+                 <div class="air-icon">
                   <i class="fa-solid fa-plane"></i>
-                  </div>
+                </div>
                 <div class="air-select-arr">
                   <span><label for="arr">도착지</label></span><br>
-                  <input id="arr" type="text" placeholder="파리(PAR)">
+                  <input id="arr" type="button" value="파리(PAR)">
                 </div>   
               </form>
-              <form class="air-search2">
+              <form class="air-search-date">
                 <div class="air-select-dep-date">
                   <span><label for="depdate">출발일</label></span><br>
-                  <input id="depdate" type="text" placeholder="2023.01.01">
+                  <input id="depdate" type="button" value="2023.01.01">
                 </div>
                 <div class="date-icon">
                   <i class="fa-solid fa-minus"></i>
                 </div>
                 <div class="air-select-arr-date">
                   <span><label for="arrdate">도착일</label></span><br>
-                  <input id="arrdate" type="text" placeholder="2023.12.31">
+                  <input id="arrdate" type="button" value="2023.12.31">
                 </div>
               </form>
-              <form class="air-search3">
+              <form class="air-search-type">
                 <div class="air-select-pax-cls">
                   <span>인원/좌석등급</span>
-                  <input type="text" placeholder="1명,일반석">
+                  <input type="button" value="1명,일반석">
                 </div>
               </form>
               <form>
-                <div class="air-search4">
+                <div class="air-submit">
                   <input type="submit" value="항공권 검색">
                 </div>
-            </form>
+              </form>
             </div>          
           </div>
-
+      
           <div id="carouselExample" class="carousel slide air-right-aside">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -129,68 +127,72 @@
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
-          </div>
-        </section>
-      </div>
+          </div>          
+        </div>
+      </section>
+
+
 
       <section id="hotel-page">
-        <div id="carouselExample2" class="carousel slide hotel-left-aside">
-          <div class="carousel-inner2">
-            <div class="carousel-item active">
-              <a href="#"><img src="img/hotel-banner1.jpg" class="d-block w-100" alt="h-banner1"></a>
+        <div class="inner-hotel-page">
+          <div id="carouselExample2" class="carousel slide hotel-left-aside">
+            <div class="carousel-inner2">
+              <div class="carousel-item active">
+                <a href="#"><img src="img/hotel-banner1.jpg" class="d-block w-100" alt="h-banner1"></a>
+              </div>
+              <div class="carousel-item">
+                <a href="#"><img src="img/hotel-banner2.jpg" class="d-block w-100" alt="h-banner2"></a>
+              </div>
+              <div class="carousel-item">
+                <a href="#"><img src="img/hotel-banner3.jpg" class="d-block w-100" alt="h-banner3"></a>
+              </div>
+              <div class="carousel-item">
+                <a href="#"><img src="img/hotel-banner4.jpg" class="d-block w-100" alt="h-banner4"></a>
+              </div>
+              <div class="carousel-item">
+                <a href="#"><img src="img/hotel-banner5.jpg" class="d-block w-100" alt="h-banner5"></a>
+              </div>
             </div>
-            <div class="carousel-item">
-              <a href="#"><img src="img/hotel-banner2.jpg" class="d-block w-100" alt="h-banner2"></a>
-            </div>
-            <div class="carousel-item">
-              <a href="#"><img src="img/hotel-banner3.jpg" class="d-block w-100" alt="h-banner3"></a>
-            </div>
-            <div class="carousel-item">
-              <a href="#"><img src="img/hotel-banner4.jpg" class="d-block w-100" alt="h-banner4"></a>
-            </div>
-            <div class="carousel-item">
-              <a href="#"><img src="img/hotel-banner5.jpg" class="d-block w-100" alt="h-banner5"></a>
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
 
-        <div class="hotel-right-bgi">
-          <div class="hotel-right-aside">
-            <p>호텔</p>
-
-            <form class="hotel-search1">
-              <span><label for="hotel-select">국가/도시,호텔검색</label></span><br>
-              <input type="text" id="hotel-select" placeholder="국가,도시,호텔명 입력">
-            </form>
-            <form class="hotel-search2">
-              <div class="chkin-date">
-                <span><label for="select-chkin-date">체크인</label></span><br>
-                <input id="select-chkin-date" type="text" placeholder="2023.01.01">
-              </div>
-              <i class="fa-solid fa-minus"></i>
-              <div class="chkout-date">
-                <span><label for="select-chkout-date">체크아웃</label></span><br>
-                <input id="select-chkout-date" type="text" placeholder="2023.12.31">
-              </div>
-            </form>
-            <form class="hotel-search3">
-              <span><label for="select-room">객실</label></span><br>
-              <input id="select-room" type="text" placeholder="1개, 성인 2명, 아동 0명">
-            </form>
-            <form class="hotel-search4">
-              <input type="submit" value="호텔 검색">
-            </form>
+          <div class="hotel-right-bgi">
+            <div class="hotel-right-aside">
+              <p>호텔</p>
+              <form class="hotel-search-city">
+                <span><label for="hotel-select">국가/도시,호텔검색</label></span><br>
+                <input id="hotel-select" type="button" value="국가,도시,호텔명 입력">
+              </form>
+              <form class="hotel-search-date">
+                <div class="chkin-date">
+                  <span><label for="select-chkin-date">체크인</label></span><br>
+                  <input id="select-chkin-date" type="button" value="2023.01.01">
+                </div>
+                <i class="fa-solid fa-minus"></i>
+                <div class="chkout-date">
+                  <span><label for="select-chkout-date">체크아웃</label></span><br>
+                  <input id="select-chkout-date" type="button" value="2023.12.31">
+                </div>
+              </form>
+              <form class="hotel-search-room">
+                <span><label for="select-room">객실</label></span><br>
+                <input id="select-room" type="button" value="1개, 성인 2명, 아동 0명">
+              </form>
+              <form class="hotel-search-submit">
+                <input type="submit" value="호텔 검색">
+              </form>
+            </div>
           </div>
         </div>
       </section>
+
 
       <section id="promotion">
         <div class="promotion-title">

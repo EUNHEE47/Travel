@@ -1,113 +1,85 @@
-
 #hotel-page{
- /* border: 1px solid white; */
- height: 650px;
- margin: 300px 250px 200px 250px;
- display: flex;
- justify-content: space-between;
- align-items: center;
- font-family: 'twayair';
+  width: 100%;
+  /* position: relative; */
+}
+
+.inner-hotel-page{
+  margin: 250px 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 650px;
 }
 
 .hotel-left-aside{
-  width: 60%;
-  height: 100%;
-  border-radius: 20px;
+  width: 55%;
   overflow: hidden;
-}
-
-.carousel-inner2 {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.carousel-inner2 img{
-  width: 100%;
-  height: 100%;
   border-radius: 20px;
 }
 
-.hotel-right-bgi {
-  border-radius: 20px;
-  width: 40%;
+.hotel-right-bgi{
+  width: 45%;
   height: 100%;
   background-image: url(../img/hotelB.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
-  margin-left: 1px;
+  border-radius: 20px;
 }
 
 .hotel-right-aside{
-  background-color: rgba(0, 0, 0, 0.8);
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 90%;
+  width: 80%;
   height: 80%;
+  background-color: rgba(0, 0, 0, 0.8);
   border-radius: 20px;
 }
 
 .hotel-right-aside p{
-  margin-top: 20px;
-  font-size: 50px;
-  display: flex;
-  justify-content: center;
-}
-
-.hotel-search1{
-  padding: 20px;
+  font-size: 40px;
   text-align: center;
+  margin-top: 10px;
 }
 
-.hotel-search2{
-  margin-top: 20px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
+.hotel-search-city, .hotel-search-room, .hotel-search-submit {
   text-align: center;
-}
-
-.hotel-search2 i{
-  display: flex;
-  align-items: center;
-  font-size: 30px;
-}
-
-.hotel-search2 input, .hotel-search1 input, .hotel-search3 input{
-  width: 60%;
-  text-align: center;
-}
-
-.hotel-search3 {
-  margin-top: 20px;
-  padding: 20px;
-  text-align: center;
-}
-
-.hotel-search4{
-  margin-top: 40px;
-  display: flex;
-  justify-content: center;
-}
-
-.hotel-search4 input{
-  background-color: black;
-  border: 1px solid black;
-  font-size: 25px;
-  border-radius: 20px;
+  margin-top: 15px;
   padding: 10px;
-  color: white;
+  font-size: 20px;
 }
 
-.hotel-search4 input:hover{
-  border: 1px solid #d0cef6;
-  background-color: #d0cef6;
+.hotel-search-date{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin-top: 15px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.hotel-search-city input, .hotel-search-date input, .hotel-search-room input{
+  width: 200px;
+  height: 30px;
+  font-size: 15px;
+  color: gray;
+}
+
+.hotel-search-submit input{
+  font-size: 30px;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+.hotel-search-submit input:hover{
+  background-color: #b5b2f5;
   color: black;
-  cursor: pointer;
   transition: all 0.5s;
+  padding: 10px;
 }

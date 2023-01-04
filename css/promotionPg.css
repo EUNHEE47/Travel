@@ -1,72 +1,61 @@
 #promotion{
-  /* border: 1px solid white; */
-  margin: 300px 100px 0 100px;
-  font-family: 'Teko', sans-serif;
+  border: 1px solid white;
+  margin: 250px 250px;
 }
 
+#promotion a{
+  color: white;
+}
 
 .promotion-title{
   display: flex;
   margin: 30px 100px;
   font-size: 35px;
-  font-family: 'twayair';
 }
 
 .promotion-title h1{
-  /* border: 1px solid white; */
   margin-right: 20px;
 }
 
 
 .promotion-link{
-  /* border: 1px solid yellow; */
   margin: 30px 90px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px; 
-  
 }
 
 .card{
-  border: 1px solid #d0cef6;
+  border: 1px solid #b5b2f5;
   background-color: black;
   width: 300px;
   height: 328px;
 }
 
 .card:hover{
-  background-color: #d0cef6;
+  background-color: #b5b2f5;
   color: black;
   transition: all 0.5s;
 }
 
-.card img{
-  width: 100%;
-}
-
 .card-body p:first-child{
   text-align: left;
-  font-family: 'twayair';
   font-size: 20px;
 }
 
 .card-body p:last-child{
-  font-family: 'twayair';
   font-size: 15px;
 }
 
 #notice-title {
-  /* border: 1px solid white;   */
   margin: 150px 200px 30px 200px;
   padding: 20px;
-  font-family: 'twayair';
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
 .notice {
-  /* border: 1px solid white; */
   width: 30%;
 }
 
@@ -76,18 +65,17 @@
 }
 
 .notice ul li{
-  border-bottom: 1px solid #d0cef6;
+  border-bottom: 1px solid #b5b2f5;
   list-style-type: square;
   padding: 15px;
 }
 
 .notice ul li:hover{
-  color: #d0cef6;
+  color: #b5b2f5;
   transition: all 0.5s;
 }
 
 .tel{
-  /* border: 1px solid white; */
   padding: 30px;
   vertical-align: middle;
 }
@@ -109,14 +97,13 @@
 }
 
 .app{
-  /* border: 1px solid white; */
   text-align: center;
   padding: 20px;
 }
 
 .app-btn{
-  border: 1px solid #d0cef6;
-  background-color: #d0cef6;
+  border: 1px solid #b5b2f5;
+  background-color: #b5b2f5;
   color: black;
   border-radius: 10px;
   font-size: 15px;
@@ -132,7 +119,6 @@
 }
 
 .sns-link-btn{
-  /* border: 1px solid white; */
   display: flex;
   justify-content: center;
 }
