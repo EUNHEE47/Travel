@@ -1,6 +1,6 @@
-#promotion, #notice{
+#promotion{
   /* border: 1px solid white; */
-  width: 100%;
+  margin: 300px 100px 0 100px;
   font-family: 'Teko', sans-serif;
 }
 
@@ -53,9 +53,9 @@
 
 
 #notice-title {
-  border: 1px solid white;  
-  margin-top: 150px;
-  width: 100%;
+  /* border: 1px solid white;   */
+  margin: 150px 200px 30px 200px;
+  padding: 20px;
   font-family: 'twayair';
   display: flex;
   justify-content: space-around;
@@ -63,19 +63,14 @@
 }
 
 .notice {
-  border: 1px solid white;
-  padding: 30px;
+  /* border: 1px solid white; */
+  width: 30%;
 }
 
 .notice h1{
   font-size: 40px;
   text-align: center;
 }
-
-.notice i{
-  color: rgb(216, 15, 15);
-}
-
 
 .notice ul li{
   border-bottom: 1px solid #d0cef6;
@@ -88,21 +83,12 @@
   transition: all 0.5s;
 }
 
-.info{
-  border: 1px solid white;
-  display: flex;
-  align-items: center;
-}
-
 .tel{
-  border: 1px solid white;
+  /* border: 1px solid white; */
   padding: 30px;
   vertical-align: middle;
 }
 
-.tel i{
-  color: rgb(235, 235, 69);
-}
 
 .tel h1 {
   font-size: 45px;
@@ -120,9 +106,9 @@
 }
 
 .app{
-  border: 1px solid white;
+  /* border: 1px solid white; */
   text-align: center;
-  padding: 30px;
+  padding: 20px;
 }
 
 .app-btn{
@@ -142,7 +128,33 @@
   transition: all 0.5s;
 }
 
+.sns-link-btn{
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content: center;
+}
+
 .link-btn{
-  border: 1px solid white;
+  margin: 5px;
   padding: 5px;  
+  font-size: 25px;
+}
+
+.link-btn:hover:nth-child(1){
+  color: #1877f2;
+  transition: all 0.5s;
+}
+
+.link-btn:hover:nth-child(2){
+  color: rgb(29, 155, 240);
+  transition: all 0.5s;
+}
+
+.link-btn:hover:nth-child(3){
+  color: #cf251f;
+  transition: all 0.5s;
+}
+
+.link-btn:hover:nth-child(4){
+  transition: all 0.5s;
 }
