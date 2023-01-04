@@ -31,7 +31,3 @@ for(let i=0; i<promotionCard.length; i++){
   document.querySelector('.promotion-link').insertAdjacentHTML('beforeend', card);
 };
 
-
-document.querySelector('.dep-city').addEventListener('click', function(){
-  document.querySelector('.dep-code').style.display = 'block';
-})

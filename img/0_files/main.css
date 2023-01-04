@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
 /* font-family: 'Teko', sans-serif; */
 
-
 *{
   margin: 0;
   padding: 0;
@@ -127,12 +126,22 @@ a{
   transition: all 0.5s;
 }
 
-.aaaaa{
-  border: 1px solid white;
-  position: relative;
-  margin: auto;
-  width: 700px;
-  height: 700px;
-  z-index: 888;
-  top: 50%;
+@media(max-width: 425px){
+  .container{
+    flex-direction: column;
+  }
+
+  .container div{
+    width: 90%;
+  }
+}
+
+@media(min-width:426px) and (max-width:768px){
+  .container{
+    flex-wrap: wrap;
+  }
+
+  .container > div{
+    width: 40%;
+  }
 }
