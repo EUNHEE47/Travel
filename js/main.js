@@ -32,6 +32,11 @@ for(let i=0; i<promotionCard.length; i++){
 };
 
 
-document.querySelector('.dep-city').addEventListener('click', function(){
-  document.querySelector('.dep-code').style.display = 'block';
-})
+document.querySelector('#dep').addEventListener('click',function(){
+  document.querySelector('.dep-modal').style.display = 'block';
+  document.querySelector('body').style.background = 'black';
+});
+
+document.querySelector('.dep-modal').addEventListener('click',function(){
+  document.querySelector('.dep-modal').style.display = 'none';
+});
