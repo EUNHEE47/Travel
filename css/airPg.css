@@ -1,5 +1,4 @@
 #air-page{
-  border: 1px solid white;
   width: 100%;
   position: relative;
 }
@@ -32,44 +31,80 @@
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+
 .air-left-aside p{
   font-size: 40px;
   text-align: center;
   margin-top: 10px;
 }
 
+.select-seg{
+  text-align: center;
+}
+
+.select-seg button{
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #b5b2f5;
+}
+
+.select-seg button:hover{
+  background-color: #b5b2f5;
+  color: black;
+}
+#select-OJT{
+  display: none;
+}
+
+#select-OJT div{
+  display: inline-block;
+  margin: 0 29px;
+}
+
+
+
+
 .air-search-city, .air-search-date, .air-search-type, .air-submit{
+  clear: both;
   display: flex;
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  margin-top: 15px;
+  margin: 5px 0;
   padding: 10px;
   font-size: 20px;
 }
 
-.air-select-dep input, .air-select-arr input,
-.air-select-dep-date input, .air-select-arr-date input,
-.air-select-pax-cls input{
-  height: 30px;
-  font-size: 15px;
-  color: gray;
-  width: 100px;
+#dep, #arr, #depdate, #arrdate{
+  color: rgb(181, 178, 245, 0.5);
+  width: 150px;
+  font-family: 'twayair';
 }
+
+#dep:hover, #arr:hover, #depdate:hover, #arrdate:hover{
+  background-color: #b5b2f5;
+  color: black;
+}
+
+.form-select{
+  background-color: rgba(0, 0, 0, 0.8);
+  color: rgb(181, 178, 245, 0.5);
+}
+
 
 .air-submit input{
   font-size: 30px;
   border-radius: 20px;
   background-color: black;
   color: white;
-  padding: 10px;
+  padding: 5px;
 }
 
 .air-submit input:hover{
+  border: 1px solid #b5b2f5;
   background-color: #b5b2f5;
   color: black;
   transition: all 0.5s;
-  padding: 10px;
 }
 
 .air-right-aside{
@@ -81,58 +116,77 @@
 
 
 
-.dep-modal{
+.dep-arr-modal{
   border-radius: 20px;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background-color: black;
-  width: 900px;
-  height: 350px;
-  z-index: 88;
+  background-color: #f5f0f0;
+  box-shadow: 0 0 100px black;
+  color: black;
+  width: 70%;
+  height: 400px;
+  z-index: 70;
   display: none;
+  overflow: hidden;
 }
 
-.dep-table{
+.dep-arr-modal input{
   width: 100%;
-  height: 100%;
-  position: relative;
-}
-
-
-.dep-table tr:first-child{
-  border-bottom: 1px solid gray;
-  font-size: 25px;
-  text-align: center;
-}
-
-.dep-table li{
-  list-style-type: none;
-  text-align: center;
+  height: 15%;
   font-size: 20px;
-  margin: 15px 0;
-}
-
-.dep-table a:hover{
-  color: #b5b2f5;
-  transition: all 0.5s;
-}
-
-.dep-table td{
-  border-right: 1px solid gray;
-}
-
-.dep-table td:last-child{
+  text-align: center;
+  background-color: #f5f0f0;
   border: none;
 }
 
-.depX{
-  color: white;
+.dep-arr-table{
+  border-top: 1px solid gray;
+  width: 100%;
+  height: 85%;
+  position: relative;
+  margin-left: 10px;
+}
+
+.dep-arr-table tr{
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin-bottom: 20px;
+}
+
+.dep-arr-table tr:first-child{
+  font-size: 20px;
+}
+
+
+.dep-arr-table ul{
+  margin-left: 10px;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+
+.dep-arr-table li{
+  list-style: none;
+  color: black;
+  margin: 15px 0;
+}
+
+.dep-arr-table li:hover, .depX:hover{
+  color: #b5b2f5;
+  transition: all 0.5s;
+} 
+
+.depX {
+  color: black;
+  border: none;
   font-size: 30px;
+  font-weight: bold;
   background: none;
   position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  right: 20px;
+  bottom: 20px;
 }

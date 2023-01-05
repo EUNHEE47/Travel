@@ -1,6 +1,6 @@
 #hotel-page{
   width: 100%;
-  /* position: relative; */
+  position: relative;
 }
 
 .inner-hotel-page{
@@ -45,28 +45,39 @@
   margin-top: 10px;
 }
 
-.hotel-search-city, .hotel-search-room, .hotel-search-submit {
+.hotel-search-city, .hotel-search-submit {
   text-align: center;
-  margin-top: 15px;
   padding: 10px;
   font-size: 20px;
 }
 
-.hotel-search-date{
+#hotel-select{
+  color: rgb(181, 178, 245, 0.5);
+}
+
+#select-chkin-date, #select-chkout-date{
+  color: rgb(181, 178, 245, 0.5);
+  width: 150px;
+}
+
+#hotel-select:hover, 
+#select-chkin-date:hover, #select-chkout-date:hover{
+  background-color: #b5b2f5;
+  color: black;
+}
+
+.hotel-search-date, .hotel-search-room{
   display: flex;
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  margin-top: 15px;
+  margin: 15px 0;
   padding: 10px;
   font-size: 20px;
 }
 
-.hotel-search-city input, .hotel-search-date input, .hotel-search-room input{
-  width: 200px;
-  height: 30px;
-  font-size: 15px;
-  color: gray;
+.hotel-search-room select{
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .hotel-search-submit input{
@@ -74,12 +85,86 @@
   border-radius: 20px;
   background-color: black;
   color: white;
-  padding: 10px;
+  padding: 5px;
 }
 
 .hotel-search-submit input:hover{
   background-color: #b5b2f5;
   color: black;
+  border: 1px solid #b5b2f5;
   transition: all 0.5s;
-  padding: 10px;
 }
+
+.hotel-modal {
+  border: 1px solid white;
+  border-radius: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f5f0f0;
+  box-shadow: 0 0 100px black;
+  color: black;
+  width: 70%;
+  height: 400px;
+  z-index: 70;
+  display: none;
+  overflow: hidden;
+}
+
+.hotel-modal-input{
+  width: 100%;
+  height: 15%;
+  font-size: 20px;
+  text-align: center;
+  background-color: #f5f0f0;
+  border: none;
+}
+
+.hotel-table{
+  border-top: 1px solid gray;
+  width: 100%;
+  height: 85%;
+  position: relative;
+  margin-left: 10px;
+}
+
+.hotel-table tr{
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin-bottom: 20px;
+}
+
+.hotel-table tr:first-child{
+  font-size: 20px;
+}
+
+.hotel-table ul{
+  margin-left: 10px;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.hotel-table li{
+  list-style: none;
+  color: black;
+  margin: 15px 0;
+}
+
+.hotel-table li:hover, .hotelX:hover{
+  color: #b5b2f5;
+  transition: all 0.5s;
+} 
+
+.hotelX {
+  color: black;
+  border: none;
+  font-size: 30px;
+  font-weight: bold;
+  background: none;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}  
