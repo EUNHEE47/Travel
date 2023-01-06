@@ -1,4 +1,3 @@
-
 // main top 스크롤
 window.addEventListener('scroll', function(){
   // console.log(window.scrollY);
@@ -32,6 +31,33 @@ for(let i=0; i<promotionCard.length; i++){
 
   document.querySelector('.promotion-link').insertAdjacentHTML('beforeend', card);
 };
+
+
+// 혜택
+let benefit = [
+  {name:'coupon', memo:'쿠폰 다운로드'},
+  {name:'mileage', memo:'마일리지 적립'},
+  {name:'insurance', memo:'여행자 보험'},
+  {name:'rental-car', memo:'렌터카'},
+];
+
+for(i=0; i<benefit.length; i++){
+  let benefitCard = `<a href="">
+                      <div class="benefit-card">
+                        <ul>
+                          <img src="${`img/${benefit[i].name}.png`}">
+                          <li>${benefit[i].memo}</li>
+                        </ul>
+                      </div>
+                     </a>`
+  document.querySelector('.benefit-box').insertAdjacentHTML('beforeend', benefitCard);
+}
+
+
+
+
+
+
 
 
 // 항공 다구간

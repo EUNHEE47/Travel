@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +7,14 @@
   <title>Travel</title>
   <!-- CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/airPg.css">
-  <link rel="stylesheet" href="css/hotelPg.css">
-  <link rel="stylesheet" href="css/promotionPg.css">
-  <link rel="stylesheet" href="css/footer.css">
+  <link rel="icon" href="img/icon.png">
+  <link rel="stylesheet" href="css/main/main.css">
+  <link rel="stylesheet" href="css/main/airPg.css">
+  <link rel="stylesheet" href="css/main/hotelPg.css">
+  <link rel="stylesheet" href="css/main/promotionPg.css">
+  <link rel="stylesheet" href="css/main/footer.css">
   <script src="https://kit.fontawesome.com/101aaed8de.js" crossorigin="anonymous"></script>
+  
 </head>
 <body>
 
@@ -27,7 +29,7 @@
               <li><a href="#air-page">항공</a></li>
               <li><a href="#hotel-page">호텔</a></li>
               <li><a href="#promotion">기획전</a></li>
-              <li><a href="#promotion">혜택</a></li>
+              <li><a href="#benefit">혜택</a></li>
             </ul>
           </div>
           <div class="logo-img">
@@ -36,7 +38,7 @@
           <div class="main-nav-right">
             <ul class="main-nav-right-ul">
               <li><a href="#">MY PAGE</a></li>
-              <li><a href="#">LOGIN</a></li>
+              <li><a href="login.html">LOGIN</a></li>
               <li><a href="#">JOIN</a></li>
             </ul>
           </div>
@@ -373,7 +375,7 @@
       <!-- promotion -->
       <section id="promotion">
         <div class="promotion-title">
-          <h1>진행중인 프로모션</h1> 
+          <p>진행중인 프로모션</p> 
           <i class="fa-solid fa-arrow-right"></i>
         </div>
         <div class="promotion-link">
@@ -384,6 +386,23 @@
                 <p>예약 기간 : 2023.01.01~</p>
               </div>
           </div></a>`; -->
+        </div>
+      </section>
+
+      <!-- benefit -->
+      <section id="benefit">
+        <div class="innerBenefit">
+          <p>혜택</p>
+          <div class="benefit-box">
+            <!-- <a href="">
+              <div class="benefit-card">
+                <ul>
+                  <img src="${`img/${benefit[i].name}.png`}">
+                  <li>${benefit[i].memo}</li>
+                </ul>
+              </div>
+             </a> -->
+          </div> 
         </div>
       </section>
 

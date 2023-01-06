@@ -11,7 +11,7 @@
 
 .air-left-bgi{
   width: 45%;
-  background-image: url(../img/airB2.png);
+  background-image: url(../../img/airB2.png);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 20px;
@@ -58,7 +58,6 @@
 
 #select-OJT div{
   display: inline-block;
-  margin: 0 29px;
 }
 
 

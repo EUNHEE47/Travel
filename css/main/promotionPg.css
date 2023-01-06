@@ -1,8 +1,7 @@
 /* promotion */
 
 #promotion{
-  border: 1px solid white;
-  margin: 250px 250px;
+  margin: 250px 190px;
 }
 
 #promotion a{
@@ -12,31 +11,33 @@
 .promotion-title{
   display: flex;
   margin: 30px 0;
-  font-size: 25px;
+  font-size: 30px;
 }
 
-.promotion-title h1{
+.promotion-title p{
   margin-right: 20px;
 }
 
 
 .promotion-link{
-  margin: 30px ;
+  margin: 30px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px; 
 }
 
 .card{
-  border: 1px solid #b5b2f5;
+  border: 1px solid rgba(181, 178, 245, 0.3);
+  border-radius: 20px;
   background-color: black;
   width: 300px;
   height: 328px;
+  overflow: hidden;
 }
 
 .card:hover{
-  background-color: #b5b2f5;
-  color: black;
+  background-color: rgba(181, 178, 245, 0.3);
+  color: white;
   transition: all 0.5s;
 }
 
@@ -49,12 +50,64 @@
   font-size: 15px;
 }
 
+/* benefit */
+
+#benefit{
+  width: 100%;
+}
+
+.innerBenefit{
+  margin: 0 190px;
+}
+
+.innerBenefit p{
+  font-size: 40px;
+}
+
+.benefit-box{
+  display: flex;
+  justify-content: center;
+}
+
+.benefit-card {
+  border: 1px solid rgba(181, 178, 245, 0.3);
+  border-radius: 20px;
+  margin: 0 50px;
+  padding: 20px;
+}
+
+.benefit-card:hover{
+  background-color: rgba(181, 178, 245, 0.3);
+  color: white;
+  transition: all 0.5s;
+}
+
+.benefit-box a{
+  color: white;
+}
+
+.benefit-card ul{
+  list-style: none;
+  font-size: 25px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.benefit-card ul img{
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+
+
+
 
 
 /* notice */
 #notice-title {
-  border: 1px solid white;
-  margin: 150px 200px 30px 200px;
+  margin: 200px 200px 30px 200px;
   padding: 20px;
   display: flex;
   justify-content: space-around;

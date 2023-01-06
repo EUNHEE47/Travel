@@ -1,0 +1,41 @@
+* #footer{
+  border-top: 1px solid rgba(211, 211, 211, 0.3);
+  padding: 10px;
+  font-family: 'twayair';
+}
+
+.footer-menu {
+  margin: 10px 100px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-menu a{
+  list-style-type: none;
+  margin: 0 10px;
+  padding: 5px;
+  font-size: 15px;
+}
+
+.footer-menu a:hover{
+  color: black;
+  background-color: #d0cef6;
+  transition: all 0.5s;
+  border-radius: 10px;
+}
+
+.company-info, .company-info2, .company-fax-mail, .copyright{
+  display: flex;
+  align-items: center;
+  margin: 0 100px;
+  color: gray;
+}
+
+.company-info li, .company-info2 li, .company-fax-mail li, .copyright li{
+  list-style: none;
+  margin: 0 10px;
+}
+
+.copyright li{
+  font-size: 13px;
+} 
