@@ -27,6 +27,7 @@
   background-color: black;
   height: 300px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .card:hover{
@@ -64,6 +65,8 @@
   align-items: center;
 }
 
+
+
 .benefit-box a{
   color: white;
 }
@@ -72,6 +75,7 @@
   border: 1px solid #b5b2f5;
   border-radius: 20px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .benefit-card ul{

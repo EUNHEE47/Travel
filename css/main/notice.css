@@ -9,12 +9,13 @@
   width: 55%;
 }
 
-.notice a{
+.notice ul a{
   color: white;
 }
 
-.notice ul a:hover{
+.notice ul li:hover{
   color: #b5b2f5;
+  cursor: pointer;
   transition: all 0.5s;
 }
 
@@ -82,6 +83,9 @@
   transition: all 0.5s;
 }
 
+.link-btn{
+  cursor: pointer;
+}
 .link-btn img{
   width: 30px;
   height: 30px;

@@ -92,7 +92,7 @@ let promotionCard = [
 ];
 
 for(let i=0; i<promotionCard.length; i++){
-  let card = `<a href="#"><div class="card">
+  let card = `<a><div class="card">
                 <img src="${`img/${promotionCard[i].name}.jpg`}" class="card-img">
                  <div class="card-body">
                    <p class="card-text">${promotionCard[i].memo}</p>
@@ -113,7 +113,7 @@ let benefit = [
 ];
 
 for(i=0; i<benefit.length; i++){
-  let benefitCard = `<a href="">
+  let benefitCard = `<a>
                       <div class="benefit-card">
                         <ul>
                           <img src="${`img/${benefit[i].name}.png`}">
@@ -123,3 +123,146 @@ for(i=0; i<benefit.length; i++){
                      </a>`
   document.querySelector('.benefit-box').insertAdjacentHTML('beforeend', benefitCard);
 }
+
+
+
+
+
+// 달력
+const date = new Date();
+const viewYear = date.getFullYear();
+const viewMonth = date.getMonth();
+
+document.querySelector('.year-month').textContent = `${viewYear}년 ${viewMonth + 1}월`;
+
+const prevLast = new Date(viewYear, viewMonth, 0);
+const thisLast = new Date(viewYear, viewMonth + 1, 0);
+
+const PLDate = prevLast.getDate();
+const PLDay = prevLast.getDay();
+
+const TLDate = thisLast.getDate();
+const TLDay = thisLast.getDay();
+
+
+const prevDates = [];
+const thisDates = [...Array(TLDate + 1).keys()].slice(1);
+const nextDates = [];
+
+if (PLDay !== 6) {
+  for (let i = 0; i < PLDay + 1; i++) {
+    prevDates.unshift(PLDate - i);
+  }
+}
+
+for (let i = 1; i < 7 - TLDay; i++) {
+  nextDates.push(i);
+}
+
+const dates = prevDates.concat(thisDates, nextDates);
+
+dates.forEach((date, i) => {
+  dates[i] = `<div class="date"><a>${date}</a></div>`;
+});
+
+document.querySelector('.dates').innerHTML = dates.join('');
+
+const renderCalendar = () => {
+  const viewYear = date.getFullYear();
+  const viewMonth = date.getMonth();
+
+  document.querySelector('.year-month').textContent = `${viewYear}년 ${viewMonth + 1}월`;
+
+  const prevLast = new Date(viewYear, viewMonth, 0);
+  const thisLast = new Date(viewYear, viewMonth + 1, 0);
+
+  const PLDate = prevLast.getDate();
+  const PLDay = prevLast.getDay();
+
+  const TLDate = thisLast.getDate();
+  const TLDay = thisLast.getDay();
+
+  const prevDates = [];
+  const thisDates = [...Array(TLDate + 1).keys()].slice(1);
+  const nextDates = [];
+
+  if (PLDay !== 6) {
+    for (let i = 0; i < PLDay + 1; i++) {
+      prevDates.unshift(PLDate - i);
+    }
+  }
+
+  for (let i = 1; i < 7 - TLDay; i++) {
+    nextDates.push(i)
+  }
+
+  const dates = prevDates.concat(thisDates, nextDates);
+
+  dates.forEach((date, i) => {
+    dates[i] = `<div class="date">${date}</div>`;
+  })
+
+  document.querySelector('.dates').innerHTML = dates.join('');
+}
+
+renderCalendar();
+
+
+const prevMonth = () => {
+  date.setMonth(date.getMonth() - 1);
+  renderCalendar();
+}
+
+const nextMonth = () => {
+  date.setMonth(date.getMonth() + 1);
+  renderCalendar();
+}
+
+const goToday = () => {
+  date = new Date();
+  renderCalendar();
+}
+
+
+const firstDateIndex = dates.indexOf(1);
+const lastDateIndex = dates.lastIndexOf(TLDate);
+dates.forEach((date, i) => {
+  const condition = i >= firstDateIndex && i < lastDateIndex + 1
+                    ? 'this'
+                    : 'other';
+
+  dates[i] = `<div class="date"><span class="${condition}">${date}</span></div>`;
+})
+
+
+const today = new Date();
+
+if (viewMonth === today.getMonth() && viewYear === today.getFullYear()) {
+  for (let date of document.querySelectorAll('.this')) {
+    if (+date.innerText === today.getDate()) {
+      date.classList.add('today');
+      break;    
+    }
+  }
+}
+
+
+
+
+
+
+
+
+let airCalendar = document.querySelector('.air-calendar');
+
+document.querySelector('#depdate').addEventListener('click',function(){
+  airCalendar.style.display = 'block';
+});
+
+document.querySelector('.X').addEventListener('click',function(){
+  airCalendar.style.display = 'none';
+});
+
+document.querySelector('#arrdate').addEventListener('click',function(){
+  airCalendar.style.display = 'block';
+});

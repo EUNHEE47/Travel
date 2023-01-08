@@ -36,7 +36,7 @@
         </div>
         <div class="main-nav-right">
           <ul class="main-nav-right-ul">
-            <li><a href="#">MY PAGE</a></li>
+            <li><a href="login.html">MY PAGE</a></li>
             <li><a href="login.html">LOGIN</a></li>
             <li><a href="#">JOIN</a></li>
           </ul>
@@ -131,7 +131,7 @@
               </form>
               <form>
                 <div class="air-submit">
-                  <input type="submit" value="항공권 검색">
+                  <input type="submit" value="항공권 검색" onclick="return false;">
                 </div>
               </form>
             </div>         
@@ -182,55 +182,80 @@
             <tr>
               <td>
                 <ul class="list">
-                  <a href="#"><li>도쿄</li></a>
-                  <a href="#"><li>오사카</li></a>
-                  <a href="#"><li>나고야</li></a>
-                  <a href="#"><li>후쿠오카</li></a>
-                  <a href="#"><li>오키나와</li></a>
+                  <a><li>도쿄</li></a>
+                  <a><li>오사카</li></a>
+                  <a><li>나고야</li></a>
+                  <a><li>후쿠오카</li></a>
+                  <a><li>오키나와</li></a>
                 </ul>
               </td>
               <td>
                 <ul class="list">
-                  <a href="#"><li>푸켓</li></a>
-                  <a href="#"><li>방콕</li></a>
-                  <a href="#"><li>싱가포르</li></a>
-                  <a href="#"><li>발리</li></a>
-                  <a href="#"><li>다낭</li></a>
+                  <a><li>푸켓</li></a>
+                  <a><li>방콕</li></a>
+                  <a><li>싱가포르</li></a>
+                  <a><li>발리</li></a>
+                  <a><li>다낭</li></a>
                 </ul>
               </td>
               <td>
                 <ul class="list">
-                  <a href="#"><li>호놀룰루</li></a>
-                  <a href="#"><li>로스앤젤레스</li></a>
-                  <a href="#"><li>샌프란시스코</li></a>
-                  <a href="#"><li>뉴욕</li></a>
-                  <a href="#"><li>시애틀</li></a>
+                  <a><li>호놀룰루</li></a>
+                  <a><li>로스앤젤레스</li></a>
+                  <a><li>샌프란시스코</li></a>
+                  <a><li>뉴욕</li></a>
+                  <a><li>시애틀</li></a>
                 </ul>
               </td>
               <td>
                   <ul class="list">
-                  <a href="#"><li>런던</li></a>
-                  <a href="#"><li>로마</li></a>
-                  <a href="#"><li>파리</li></a>
-                  <a href="#"><li>마드리드</li></a>
-                  <a href="#"><li>취리히</li></a>
+                  <a><li>런던</li></a>
+                  <a><li>로마</li></a>
+                  <a><li>파리</li></a>
+                  <a><li>마드리드</li></a>
+                  <a><li>취리히</li></a>
                 </ul>
               </td>
               <td>
                   <ul class="list">
-                  <a href="#"><li>괌</li></a>
-                  <a href="#"><li>사이판</li></a>
-                  <a href="#"><li>시드니</li></a>
-                  <a href="#"><li>오클랜드</li></a>
-                  <a href="#"><li>웰링턴</li></a>
+                  <a><li>괌</li></a>
+                  <a><li>사이판</li></a>
+                  <a><li>시드니</li></a>
+                  <a><li>오클랜드</li></a>
+                  <a><li>웰링턴</li></a>
                 </ul>
               </td>
             </tr>           
           </table>
           <button class="depX">X</button>
         </div>
-      </section>
 
+        <!-- 달력 -->
+        <div class="air-calendar">
+          <div class="calendar-header">
+            <div class="calendar-nav">
+              <button class="calendar-nav-btn go-prev" onclick="prevMonth()">&lt;</button>
+              <div class="year-month"></div>
+              <button class="calendar-nav-btn go-next" onclick="nextMonth()">&gt;</button>
+              <button class="X">X</button>
+            </div>
+          </div>
+
+          <div class="calendar-main">
+            <div class="days">
+              <div class="day">일</div>
+              <div class="day">월</div>
+              <div class="day">화</div>
+              <div class="day">수</div>
+              <div class="day">목</div>
+              <div class="day">금</div>
+              <div class="day">토</div>
+            </div>
+            <div class="dates"></div>
+          </div>
+        </div>
+
+      </section>
 
 
 
@@ -304,7 +329,7 @@
                 </div>
               </form>
               <form class="hotel-search-submit">
-                <input type="submit" value="호텔 검색">
+                <input type="submit" value="호텔 검색" onclick="return false;">
               </form>
             </div>
           </div>
@@ -322,47 +347,47 @@
               <tr>
                 <td>
                   <ul class="list">
-                    <a href="#"><li>도쿄</li></a>
-                    <a href="#"><li>오사카</li></a>
-                    <a href="#"><li>나고야</li></a>
-                    <a href="#"><li>후쿠오카</li></a>
-                    <a href="#"><li>오키나와</li></a>
+                    <a><li>도쿄</li></a>
+                    <a><li>오사카</li></a>
+                    <a><li>나고야</li></a>
+                    <a><li>후쿠오카</li></a>
+                    <a><li>오키나와</li></a>
                   </ul>
                 </td>
                 <td>
                   <ul class="list">
-                    <a href="#"><li>푸켓</li></a>
-                    <a href="#"><li>방콕</li></a>
-                    <a href="#"><li>싱가포르</li></a>
-                    <a href="#"><li>발리</li></a>
-                    <a href="#"><li>다낭</li></a>
+                    <a><li>푸켓</li></a>
+                    <a><li>방콕</li></a>
+                    <a><li>싱가포르</li></a>
+                    <a><li>발리</li></a>
+                    <a><li>다낭</li></a>
                   </ul>
                 </td>
                 <td>
                   <ul class="list">
-                    <a href="#"><li>호놀룰루</li></a>
-                    <a href="#"><li>로스앤젤레스</li></a>
-                    <a href="#"><li>샌프란시스코</li></a>
-                    <a href="#"><li>뉴욕</li></a>
-                    <a href="#"><li>시애틀</li></a>
+                    <a><li>호놀룰루</li></a>
+                    <a><li>로스앤젤레스</li></a>
+                    <a><li>샌프란시스코</li></a>
+                    <a><li>뉴욕</li></a>
+                    <a><li>시애틀</li></a>
                   </ul>
                 </td>
                 <td>
                     <ul class="list">
-                    <a href="#"><li>런던</li></a>
-                    <a href="#"><li>로마</li></a>
-                    <a href="#"><li>파리</li></a>
-                    <a href="#"><li>마드리드</li></a>
-                    <a href="#"><li>취리히</li></a>
+                    <a><li>런던</li></a>
+                    <a><li>로마</li></a>
+                    <a><li>파리</li></a>
+                    <a><li>마드리드</li></a>
+                    <a><li>취리히</li></a>
                   </ul>
                 </td>
                 <td>
                     <ul class="list">
-                    <a href="#"><li>괌</li></a>
-                    <a href="#"><li>사이판</li></a>
-                    <a href="#"><li>시드니</li></a>
-                    <a href="#"><li>오클랜드</li></a>
-                    <a href="#"><li>웰링턴</li></a>
+                    <a><li>괌</li></a>
+                    <a><li>사이판</li></a>
+                    <a><li>시드니</li></a>
+                    <a><li>오클랜드</li></a>
+                    <a><li>웰링턴</li></a>
                   </ul>
                 </td>
               </tr>           
@@ -370,6 +395,7 @@
             <button class="hotelX">X</button>
           </div>
         </div>
+
       </section>  
 
 
@@ -380,7 +406,7 @@
           <p>진행중인 프로모션</p>
         </div>
         <div class="promotion-link">
-            <!-- let card = `<a href="#"><div class="card">
+            <!-- let card = `<a><div class="card">
               <img src="${`img/${promotionCard[i].name}.jpg`}" class="card-img">
               <div class="card-body">
                 <p class="card-text">${promotionCard[i].memo}</p>
@@ -397,7 +423,7 @@
         <div class="innerBenefit">
           <p>주요 혜택</p>
           <div class="benefit-box">
-            <!-- <a href="">
+            <!-- <a>
               <div class="benefit-card">
                 <ul>
                   <img src="${`img/${benefit[i].name}.png`}">
@@ -417,10 +443,10 @@
         <div class="notice">
           <p>공지사항</p>
           <ul>
-            <a href="#"><li>[2023년 1월 무이자 할부 안내<span>2023.01.01</span></li></a>
-            <a href="#"><li>[2023년 1월부 국내선/국제선 유류할증료 안내]<span>2022.12.30</span></li></a>
-            <a href="#"><li>[홈페이지 및 고객 서비스 점검 안내]<span>2022.12.05</span></li></a>
-            <a href="#"><li>[개인정보 처리방침 관련 변경 안내]<span>2022.01.02</span></li></a>
+            <a><li>[2023년 1월 무이자 할부 안내<span>2023.01.01</span></li></a>
+            <a><li>[2023년 1월부 국내선/국제선 유류할증료 안내]<span>2022.12.30</span></li></a>
+            <a><li>[홈페이지 및 고객 서비스 점검 안내]<span>2022.12.05</span></li></a>
+            <a><li>[개인정보 처리방침 관련 변경 안내]<span>2022.01.02</span></li></a>
           </ul>
         </div>
 
@@ -443,19 +469,19 @@
             </div>
 
             <div class="sns-link-btn">        
-              <a class="link-btn" href="#">
+              <a class="link-btn">
                 <img src="img/facebook.png">
               </a>
-              <a class="link-btn" href="#">
+              <a class="link-btn">
                 <img src="img/twitter.png">
               </a>
-              <a class="link-btn" href="#">
+              <a class="link-btn">
                 <img src="img/naver.png">
               </a>
-              <a class="link-btn" href="#">
+              <a class="link-btn">
                 <img src="img/kakao-talk.png">
               </a>
-              <a class="link-btn" href="#">
+              <a class="link-btn">
                 <img src="img/youtube.png">
               </a>
             </div>
@@ -464,7 +490,6 @@
       </section>
     </div>
     <!-- wrapper -->
-
 
 
     <!-- footer -->

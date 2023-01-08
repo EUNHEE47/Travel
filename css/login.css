@@ -29,13 +29,7 @@ body{
   margin: auto;
 }
 
-.dddd{
-  width: 100%;
-  margin-top: 200px;
-}
-
 .innerLogin{
-  margin-top: 200px;
   width: 50%;
   margin: auto;
 }
@@ -43,12 +37,15 @@ body{
 .text-login-wrap{
   width: 100%;
   height: 100%;
+  margin-top: 200px;
   text-align: center;
 }
+
 
 .text-login-wrap p{
   font-size: 40px;
   font-weight: bold;
+  margin-bottom: 50px;
 }
 
 .text-login-wrap ul{
@@ -81,6 +78,7 @@ body{
   width: 100%;
   background-color: rgb(74, 74, 74);
   border-radius: 5px;
+  height: 35px;
 }
 
 .id-submit::placeholder,
@@ -108,6 +106,15 @@ body{
   margin-top: 30px;
 }
 
+.searchWrap a{
+  color: white;
+}
+
+.searchWrap a:hover{
+  color: #b5b2f5;
+  transition: all 0.3s;
+}
+
 .searchWrap ul{
   display: flex;
   justify-content: center;
@@ -121,15 +128,17 @@ body{
 }
 
 .snsWrap{
-  border: 1px solid white;
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  margin: 50px 0;
+}
+
+.snsWrap a{
+  margin: 0 15px;
 }
 
 .snsWrap img{
-  width: 10%;
+  width: 50px;
   border-radius: 100%;
-  margin: 10px 10px;
-}  
+}
