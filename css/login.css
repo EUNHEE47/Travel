@@ -9,14 +9,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'twayair';
 }
 
 body{
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: black;
   color: white;
+  font-family: 'twayair';
 }
 
 #login-container{
@@ -25,107 +25,95 @@ body{
 }
 
 #login-wrapper{
-  width: 80%;
-  height: 100%;
+  width: 70%;
   margin: auto;
 }
 
-#login-wrap{
+.dddd{
   width: 100%;
-  margin: 200px 0 100px 0;
+  margin-top: 200px;
 }
 
 .innerLogin{
-  width: 40%;
+  margin-top: 200px;
+  width: 50%;
   margin: auto;
 }
 
-.text-login-wrap {
-  margin-bottom: 50px;
+.text-login-wrap{
+  width: 100%;
+  height: 100%;
+  text-align: center;
 }
 
 .text-login-wrap p{
-  margin-bottom: 50px;
-  text-align: center;
-  font-size: 35px;
+  font-size: 40px;
   font-weight: bold;
 }
 
 .text-login-wrap ul{
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   list-style-type: none;
   padding: 0;
 }
 
-#member, #nomember{
-  width: 100%;
-  background-color: transparent;
-  color: white;
-  border: 1px solid #b5b2f5;
-}
-
-#member:hover, #nomember:hover{
-  border: 1px solid black;
-  background-color: #b5b2f5;
-  transition: all 0.5s;
-  color: black;
-}
-
-
 .text-login-wrap ul li{
   width: 100%;
-  height: 50px;
-  list-style: none;
-  font-size: 20px;
-  text-align: center;
-  line-height: 50px;
 }
 
-
+ #member, #nomember{
+  width: 100%;
+  line-height: 50px;
+  border: 1px solid #b5b2f5;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  transition: all 0.5s;
+}
 
 .form-login-wrap{
-  width: 100%;
-  margin-bottom: 20px;
+  margin-top: 30px;
 }
 
-#idPw input, #idPw-nomember input{
-  margin-bottom: 15px;
+.id-submit, .pw-submit{
   width: 100%;
-  height: 38px;
-  font-size: 18px;
+  background-color: rgb(74, 74, 74);
+  border-radius: 5px;
+}
+
+.id-submit::placeholder,
+.pw-submit::placeholder{
+  color: white;
+}
+
+.idPw-submit{
+  width: 100%;
+  height: 50px;
   border-radius: 10px;
+}
+
+.idPw-submit:hover{
+  background-color: #b5b2f5;
+  transition: all 0.3s;
+
 }
 
 #idPw-nomember{
   display: none;
 }
 
-#idPw-submit:hover{
-  background-color: #b5b2f5;
-  transition: all 0.5s;
-
-}
-
-.idChk-form input{
-  width: 20px;
-  height: 15px;
-}
-
-.idChk-form {
-  font-size: 18px;
-}
-
 .searchWrap{
-  margin-bottom: 20px;
+  margin-top: 30px;
 }
 
 .searchWrap ul{
   display: flex;
   justify-content: center;
   list-style: none;
-  padding: 0;
+  margin: 0;
+  padding: 0; 
 }
 
 .searchWrap ul li{
@@ -133,12 +121,15 @@ body{
 }
 
 .snsWrap{
+  border: 1px solid white;
+  width: 100%;
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .snsWrap img{
   width: 10%;
   border-radius: 100%;
-  margin: 0 10px;
-}
+  margin: 10px 10px;
+}  

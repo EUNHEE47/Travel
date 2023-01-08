@@ -1,49 +1,62 @@
+#wrapper{
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+}
+
 #air-page{
+  margin-top: 200px;
   width: 100%;
+  height: 600px;
   position: relative;
 }
 
 .inner-air-page{
-  margin: 250px 250px;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: space-between;
 }
 
+
+
+/* air left */
 .air-left-bgi{
   width: 45%;
   background-image: url(../../img/airB2.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   border-radius: 20px;
-  overflow: hidden;
   position: relative;
-
 }
- 
+
 .air-left-aside{
+  width: 80%;
+  height: 80%;
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
-  width: 80%;
-  height: 80%;
-  border-radius: 20px;
+  transform: translate(-50% ,-50%);
   background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
-
 .air-left-aside p{
+  width: 100%;
   font-size: 40px;
   text-align: center;
-  margin-top: 10px;
 }
 
 .select-seg{
   text-align: center;
+  width: 100%;
 }
 
 .select-seg button{
-  margin: 10px;
   background-color: rgba(0, 0, 0, 0.8);
   color: #b5b2f5;
 }
@@ -51,7 +64,9 @@
 .select-seg button:hover{
   background-color: #b5b2f5;
   color: black;
+  transition: all 0.3s;
 }
+
 #select-OJT{
   display: none;
 }
@@ -61,23 +76,21 @@
 }
 
 
-
-
-.air-search-city, .air-search-date, .air-search-type, .air-submit{
-  clear: both;
+.air-search-city, .air-search-date, .air-submit, .air-search-type{
   display: flex;
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  margin: 5px 0;
-  padding: 10px;
-  font-size: 20px;
 }
 
+.air-search-city div, .air-search-date div, .air-search-type div{
+  margin: 0 10px;
+}
+
+
 #dep, #arr, #depdate, #arrdate{
+  width: 100%;
   color: rgb(181, 178, 245, 0.5);
-  width: 150px;
-  font-family: 'twayair';
 }
 
 #dep:hover, #arr:hover, #depdate:hover, #arrdate:hover{
@@ -92,29 +105,40 @@
 
 
 .air-submit input{
-  font-size: 30px;
+  font-size: 20px;
   border-radius: 20px;
   background-color: black;
   color: white;
-  padding: 5px;
+  padding: 2px;
 }
 
 .air-submit input:hover{
   border: 1px solid #b5b2f5;
   background-color: #b5b2f5;
   color: black;
-  transition: all 0.5s;
+  transition: all 0.3s;
 }
 
+
+
+
+
+/* air right */
 .air-right-aside{
   width: 55%;
   overflow: hidden;
   border-radius: 20px;
   display: flex;
+  align-items: center;
+}
+
+.air-right-aside img{
+  border-radius: 20px;
 }
 
 
 
+/* air modal */
 .dep-arr-modal{
   border-radius: 20px;
   position: absolute;
@@ -122,11 +146,11 @@
   top: 50%;
   transform: translate(-50%, -50%);
   background-color: #f5f0f0;
-  box-shadow: 0 0 100px black;
+  box-shadow: 0 0 20px #b5b2f5;
   color: black;
-  width: 70%;
+  width: 100%;
   height: 400px;
-  z-index: 70;
+  z-index: 1;
   display: none;
   overflow: hidden;
 }
@@ -152,39 +176,30 @@
   margin-top: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  margin-bottom: 20px;
 }
-
-.dep-arr-table tr:first-child{
-  font-size: 20px;
-}
-
 
 .dep-arr-table ul{
-  margin-left: 10px;
-  display: block;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 
 .dep-arr-table li{
-  list-style: none;
   color: black;
   margin: 15px 0;
 }
 
 .dep-arr-table li:hover, .depX:hover{
   color: #b5b2f5;
-  transition: all 0.5s;
+  transition: all 0.3s;
 } 
 
 .depX {
   color: black;
   border: none;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bold;
-  background: none;
   position: absolute;
   right: 20px;
   bottom: 20px;

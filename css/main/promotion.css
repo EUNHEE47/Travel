@@ -1,0 +1,96 @@
+/* promotion */
+
+#promotion{
+  margin-top: 200px;
+}
+
+#promotion a{
+  color: white;
+}
+
+.promotion-title{
+  display: flex;
+  font-size: 25px;
+}
+
+.promotion-link{
+  width: 100%;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+
+.card{
+  border: 1px solid #b5b2f5;
+  border-radius: 20px;
+  background-color: black;
+  height: 300px;
+  overflow: hidden;
+}
+
+.card:hover{
+  background-color: #b5b2f5;
+  color: black;
+  transition: all 0.5s;
+}
+
+.card-body{
+  padding: 0 10px;
+  display: grid;
+  align-items: center;
+}
+
+
+
+
+
+
+/* benefit */
+
+#benefit{
+  width: 100%;
+  margin-top: 200px;
+}
+
+.innerBenefit p{
+  font-size: 25px;
+}
+
+.benefit-box{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.benefit-box a{
+  color: white;
+}
+
+.benefit-card{
+  border: 1px solid #b5b2f5;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.benefit-card ul{
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+  font-size: 20px;
+}
+
+.benefit-card img{
+  width: 220px;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+.benefit-card:hover{
+  background-color: #b5b2f5;
+  color: black;
+  transition: all 0.5s;
+}
+
+

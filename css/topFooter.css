@@ -1,0 +1,113 @@
+/* top */
+
+
+#header{
+  font-family: 'twayair';
+  width: 100%;
+  height: 100%;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.main-top{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+  transition: all 0.3s; 
+}
+
+.main-nav-left, .main-nav-right{
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 0;
+}
+
+.main-nav-left-ul, .main-nav-right-ul{
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  list-style: none;
+  margin-top: 10px;
+}
+
+.main-nav-left-ul li, .main-nav-right-ul li{
+  margin: 10px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+}
+
+.main-nav-left-ul li a:hover, .main-nav-right-ul li a:hover{
+  color: #b5b2f5;  
+  transition: all 0.3s;
+}
+
+.logo-img{
+  font-size: 50px;
+  font-weight: bolder;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+}
+
+.logo-img a:hover{
+  color: #b5b2f5;
+  transition: all 0.3s;
+}
+
+.top-btn{
+  position: fixed;
+  right: 45px;
+  bottom: 60px;
+  font-size: 30px;
+  border-radius: 100%;
+  z-index: 90;
+}
+
+.top-btn a:hover{
+  color: #b5b2f5;
+  border-radius: 100px;
+  padding: 5px;
+  transition: all 0.3s;
+}
+
+
+/* footer */
+
+#footer{
+  border-top: 1px solid rgba(211, 211, 211, 0.3);
+  font-family: 'twayair';
+}
+
+.footer-menu{
+  margin: 30px 0 30px 150px;
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  color: gray;
+}
+
+.company-info, .company-info2, 
+.company-fax-mail, .copyright{
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0 0 5px 150px;
+  color: gray;
+}
+
+.footer-menu a{
+  color: white;
+}
+
+.footer-menu a:hover{
+  color: #b5b2f5;
+  transition: all 0.3s;
+}
+
+.footer-menu li, .company-info li, .company-info2 li, .company-fax-mail li, .copyright li{
+  border: 1px slid white;
+  margin: 0 10px;
+}
