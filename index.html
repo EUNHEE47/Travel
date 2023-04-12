@@ -1,342 +1,287 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Travel</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  <script src="https://kit.fontawesome.com/101aaed8de.js" crossorigin="anonymous"></script>
-  <link rel="icon" href="img/favicon.png">
-  <link rel="stylesheet" href="css/topFooter.css">
-  <link rel="stylesheet" href="css/main/main.css">
-  <link rel="stylesheet" href="css/main/airPg.css">
-  <link rel="stylesheet" href="css/main/hotelPg.css">
-  <link rel="stylesheet" href="css/main/promotion.css">
-  <link rel="stylesheet" href="css/main/notice.css">
-</head>
-<body>
-
-  <div id="container">
-
-
-    <!-- main top -->
-    <div id="header">
-      <div class="main-top">
-        <div class="main-nav-left">
-          <ul class="main-nav-left-ul">
-            <li><a href="#air-page">항공</a></li>
-            <li><a href="#hotel-page">호텔</a></li>
-            <li><a href="#promotion">기획전</a></li>
-            <li><a href="#benefit">혜택</a></li>
-          </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/101aaed8de.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="stylesheet" href="css/topFooter.css" />
+    <link rel="stylesheet" href="css/main/main.css" />
+    <link rel="stylesheet" href="css/main/airPg.css" />
+    <link rel="stylesheet" href="css/main/hotelPg.css" />
+    <link rel="stylesheet" href="css/main/promotion.css" />
+    <link rel="stylesheet" href="css/main/notice.css" />
+  </head>
+  <body>
+    <div id="container">
+      <!-- main top -->
+      <div id="header">
+        <div class="main-top">
+          <div class="main-nav-left">
+            <ul class="main-nav-left-ul">
+              <li><a href="#air-page">항공</a></li>
+              <li><a href="#hotel-page">호텔</a></li>
+              <li><a href="#promotion">기획전</a></li>
+              <li><a href="#benefit">혜택</a></li>
+            </ul>
+          </div>
+          <div class="logo-img">
+            <a href="#">Logo</a>
+          </div>
+          <div class="main-nav-right">
+            <ul class="main-nav-right-ul">
+              <li><a href="login.html">MY PAGE</a></li>
+              <li><a href="login.html">LOGIN</a></li>
+              <li><a href="join.html">JOIN</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="logo-img">
-          <a href="#">Logo</a>
+
+        <div class="top-btn">
+          <a href="#"><i class="fa-solid fa-plane-up"></i></a>
         </div>
-        <div class="main-nav-right">
-          <ul class="main-nav-right-ul">
-            <li><a href="login.html">MY PAGE</a></li>
-            <li><a href="login.html">LOGIN</a></li>
-            <li><a href="join.html">JOIN</a></li>
-          </ul>
+
+        <div class="video">
+          <video autoplay controls loop muted>
+            <source src="img/video1.mp4" />
+          </video>
         </div>
       </div>
-      
-      <div class="top-btn">
-        <a href="#"><i class="fa-solid fa-plane-up"></i></a>
-      </div>
 
-      <div class="video">
-        <video autoplay controls loop muted>
-          <source src="img/video1.mp4">
-        </video>
-      </div>
-    </div>
-
-
-    <!-- wrapper -->
-    <div id="wrapper">
-
-      <!-- 항공 -->
-      <section id="air-page">
-        <div class="inner-air-page">
-          <div class="air-left-bgi">
-            <div class="air-left-aside">
-              <p>항공권</p>        
-              <div class="select-seg">
-                <button type="button" class="btn btn-secondary RT">왕복</button>
-                <button type="button" class="btn btn-secondary OW">편도</button>
-                <button type="button" class="btn btn-secondary OJT">다구간</button>
-              </div>
-              <form class="air-search-city">
-                <div class="air-select-dep">
-                  <span><label for="dep">출발지</label></span><br>
-                  <button id="dep" type="button" class="btn btn-outline-secondary">서울(SEL)</button>
-                 </div>
-                 <div class="air-icon">
-                  <i class="fa-solid fa-plane"></i>
+      <!-- wrapper -->
+      <div id="wrapper">
+        <!-- 항공 -->
+        <section id="air-page">
+          <div class="inner-air-page">
+            <div class="air-left-bgi">
+              <div class="air-left-aside">
+                <p>항공권</p>
+                <div class="select-seg">
+                  <button type="button" class="btn btn-secondary RT">
+                    왕복
+                  </button>
+                  <button type="button" class="btn btn-secondary OW">
+                    편도
+                  </button>
+                  <button type="button" class="btn btn-secondary OJT">
+                    다구간
+                  </button>
                 </div>
-                <div class="air-select-arr">
-                  <span><label for="arr">도착지</label></span><br>
-                  <button id="arr" type="button" class="btn btn-outline-secondary">파리(PAR)</button>
-                </div>   
-              </form>
+                <form class="air-search-city">
+                  <div class="air-select-dep">
+                    <span><label for="dep">출발지</label></span
+                    ><br />
+                    <button
+                      id="dep"
+                      type="button"
+                      class="btn btn-outline-secondary"
+                    >
+                      서울(SEL)
+                    </button>
+                  </div>
+                  <div class="air-icon">
+                    <i class="fa-solid fa-plane"></i>
+                  </div>
+                  <div class="air-select-arr">
+                    <span><label for="arr">도착지</label></span
+                    ><br />
+                    <button
+                      id="arr"
+                      type="button"
+                      class="btn btn-outline-secondary"
+                    >
+                      파리(PAR)
+                    </button>
+                  </div>
+                </form>
 
-              <form id="select-OJT" class="air-search-city">
-                <div class="air-select-dep">
-                  <span><label for="dep">출발지</label></span><br>
-                  <button id="dep" type="button" class="btn btn-outline-secondary">서울(SEL)</button>
-                 </div>
-                 <div class="air-icon">
-                  <i class="fa-solid fa-plane"></i>
-                </div>
-                <div class="air-select-arr">
-                  <span><label for="arr">도착지</label></span><br>
-                  <button id="arr" type="button" class="btn btn-outline-secondary">파리(PAR)</button>
-                </div>   
-              </form>
-              <form class="air-search-date">
-                <div class="air-select-dep-date">
-                  <span><label for="depdate">출발일</label></span><br>
-                  <button id="depdate" type="button" class="btn btn-outline-secondary">2023.01.01</button>
-                </div>
-                <div class="date-icon">
-                  <i class="fa-solid fa-minus"></i>
-                </div>
-                <div class="air-select-arr-date">
-                  <span><label for="arrdate">도착일</label></span><br>
-                  <button id="arrdate" type="button" class="btn btn-outline-secondary">2023.12.31</button>
-                </div>
-              </form>
-              <form class="air-search-type">
-                <div class="air-select-pax">
-                  <span>인원</span>
-                   <select class="form-select">
-                    <option value="">1명</option>
-                    <option value="1">1명</option>
-                    <option value="2">2명</option>
-                    <option value="3">3명</option>                    
-                  </select>
-                </div>
-                <div class="air-select-cls">
-                  <span>좌석등급</span>
-                  <select class="form-select">
-                    <option selected>일반석</option>
-                    <option value="Y">일반석</option>
-                    <option value="C">비지니스석</option>
-                    <option value="F">일등석</option>                    
-                  </select>
-                </div>
-              </form>
-              <form>
-                <div class="air-submit">
-                  <input type="submit" value="항공권 검색" onclick="return false;">
-                </div>
-              </form>
-            </div>         
-          </div>
-      
-          <div id="carouselExampleAutoplaying" class="carousel slide air-right-aside" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <a href="#"><img src="img/air-banner1.jpg" class="d-block w-100" alt="a-banner1"></a>
-              </div>
-              <div class="carousel-item">
-                <a href="#"><img src="img/air-banner2.jpg" class="d-block w-100" alt="a-banner2"></a>
-              </div>
-              <div class="carousel-item">
-                <a href="#"><img src="img/air-banner3.jpg" class="d-block w-100" alt="a-banner3"></a>
-              </div>
-              <div class="carousel-item">
-                <a href="#"><img src="img/air-banner4.jpg" class="d-block w-100" alt="a-banner4"></a>
-              </div>
-              <div class="carousel-item">
-                <a href="#"><img src="img/air-banner5.jpg" class="d-block w-100" alt="a-banner5"></a>
-              </div>
-              <div class="carousel-item">
-                <a href="#"><img src="img/air-banner6.jpg" class="d-block w-100" alt="a-banner5"></a>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>         
-        </div>
-
-        <div class="dep-arr-modal">
-          <input id="dep-arr-modal-input" type="text" placeholder="도시명을 입력하세요" required>
-          <table class="dep-arr-table">
-            <tr>
-              <th>일본</th>
-              <th>동남아</th>
-              <th>미주/캐나다</th>
-              <th>유럽</th>
-              <th>대양주/괌/사이판</th>
-            </tr>
-            <tr>
-              <td>
-                <ul class="list">
-                  <a><li>도쿄</li></a>
-                  <a><li>오사카</li></a>
-                  <a><li>나고야</li></a>
-                  <a><li>후쿠오카</li></a>
-                  <a><li>오키나와</li></a>
-                </ul>
-              </td>
-              <td>
-                <ul class="list">
-                  <a><li>푸켓</li></a>
-                  <a><li>방콕</li></a>
-                  <a><li>싱가포르</li></a>
-                  <a><li>발리</li></a>
-                  <a><li>다낭</li></a>
-                </ul>
-              </td>
-              <td>
-                <ul class="list">
-                  <a><li>호놀룰루</li></a>
-                  <a><li>로스앤젤레스</li></a>
-                  <a><li>샌프란시스코</li></a>
-                  <a><li>뉴욕</li></a>
-                  <a><li>시애틀</li></a>
-                </ul>
-              </td>
-              <td>
-                  <ul class="list">
-                  <a><li>런던</li></a>
-                  <a><li>로마</li></a>
-                  <a><li>파리</li></a>
-                  <a><li>마드리드</li></a>
-                  <a><li>취리히</li></a>
-                </ul>
-              </td>
-              <td>
-                  <ul class="list">
-                  <a><li>괌</li></a>
-                  <a><li>사이판</li></a>
-                  <a><li>시드니</li></a>
-                  <a><li>오클랜드</li></a>
-                  <a><li>웰링턴</li></a>
-                </ul>
-              </td>
-            </tr>           
-          </table>
-          <button class="depX">X</button>
-        </div>
-
-        <!-- 달력 -->
-        <div class="air-calendar">
-          <div class="calendar-header">
-            <div class="calendar-nav">
-              <button class="calendar-nav-btn go-prev" onclick="prevMonth()">&lt;</button>
-              <div class="year-month"></div>
-              <button class="calendar-nav-btn go-next" onclick="nextMonth()">&gt;</button>
-              <button class="X">X</button>
-            </div>
-          </div>
-
-          <div class="calendar-main">
-            <div class="days">
-              <div class="day">일</div>
-              <div class="day">월</div>
-              <div class="day">화</div>
-              <div class="day">수</div>
-              <div class="day">목</div>
-              <div class="day">금</div>
-              <div class="day">토</div>
-            </div>
-            <div class="dates"></div>
-          </div>
-        </div>
-
-      </section>
-
-
-
-      <!-- 호텔 -->
-      <section id="hotel-page">
-        <div class="inner-hotel-page">
-          <div id="carouselExampleAutoplaying2" class="carousel slide hotel-left-aside" data-bs-ride="carousel">
-            <div class="carousel-inner2">
-              <div class="carousel-item active">
-                <a href="#"><img src="img/hotel-banner1.jpg" class="d-block w-100" alt="h-banner1"></a>
-              </div>
-              <div class="carousel-item">
-                <a href="#"><img src="img/hotel-banner2.jpg" class="d-block w-100" alt="h-banner2"></a>
-              </div>
-              <div class="carousel-item">
-                <a href="#"><img src="img/hotel-banner3.jpg" class="d-block w-100" alt="h-banner3"></a>
-              </div>
-              <div class="carousel-item">
-                <a href="#"><img src="img/hotel-banner4.jpg" class="d-block w-100" alt="h-banner4"></a>
-              </div>
-              <div class="carousel-item">
-                <a href="#"><img src="img/hotel-banner5.jpg" class="d-block w-100" alt="h-banner5"></a>
+                <form id="select-OJT" class="air-search-city">
+                  <div class="air-select-dep">
+                    <span><label for="dep">출발지</label></span
+                    ><br />
+                    <button
+                      id="dep"
+                      type="button"
+                      class="btn btn-outline-secondary"
+                    >
+                      서울(SEL)
+                    </button>
+                  </div>
+                  <div class="air-icon">
+                    <i class="fa-solid fa-plane"></i>
+                  </div>
+                  <div class="air-select-arr">
+                    <span><label for="arr">도착지</label></span
+                    ><br />
+                    <button
+                      id="arr"
+                      type="button"
+                      class="btn btn-outline-secondary"
+                    >
+                      파리(PAR)
+                    </button>
+                  </div>
+                </form>
+                <form class="air-search-date">
+                  <div class="air-select-dep-date">
+                    <span><label for="depdate">출발일</label></span
+                    ><br />
+                    <button
+                      id="depdate"
+                      type="button"
+                      class="btn btn-outline-secondary"
+                    >
+                      2023.01.01
+                    </button>
+                  </div>
+                  <div class="date-icon">
+                    <i class="fa-solid fa-minus"></i>
+                  </div>
+                  <div class="air-select-arr-date">
+                    <span><label for="arrdate">도착일</label></span
+                    ><br />
+                    <button
+                      id="arrdate"
+                      type="button"
+                      class="btn btn-outline-secondary"
+                    >
+                      2023.12.31
+                    </button>
+                  </div>
+                </form>
+                <form class="air-search-type">
+                  <div class="air-select-pax">
+                    <span>인원</span>
+                    <select class="form-select">
+                      <option value="1">1명</option>
+                      <option value="2">2명</option>
+                      <option value="3">3명</option>
+                      <option value="4">4명</option>
+                    </select>
+                  </div>
+                  <div class="air-select-cls">
+                    <span>좌석등급</span>
+                    <select class="form-select">
+                      <option selected>일반석</option>
+                      <option value="Y">일반석</option>
+                      <option value="C">비지니스석</option>
+                      <option value="F">일등석</option>
+                    </select>
+                  </div>
+                </form>
+                <form>
+                  <div class="air-submit">
+                    <input
+                      type="submit"
+                      value="항공권 검색"
+                      onclick="return false;"
+                    />
+                  </div>
+                </form>
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying2" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying2" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
 
-          <div class="hotel-right-bgi">
-            <div class="hotel-right-aside">
-              <p>호텔</p>
-              <form class="hotel-search-city">
-                <span><label for="hotel-select">국가/도시,호텔검색</label></span><br>
-                <button id="hotel-select" type="button" class="btn btn-outline-secondary">국가/도시,호텔명 입력</button>
-              </form>
-              <form class="hotel-search-date">
-                <div class="chkin-date">
-                  <span><label for="select-chkin-date">체크인</label></span><br>
-                  <button id="select-chkin-date" type="button" class="btn btn-outline-secondary">2023.01.01</button>
+            <div
+              id="carouselExampleAutoplaying"
+              class="carousel slide air-right-aside"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <a href="#"
+                    ><img
+                      src="img/air-banner1.jpg"
+                      class="d-block w-100"
+                      alt="a-banner1"
+                  /></a>
                 </div>
-                <i class="fa-solid fa-minus"></i>
-                <div class="chkout-date">
-                  <span><label for="select-chkout-date">체크아웃</label></span><br>
-                  <button id="select-chkout-date" type="button" class="btn btn-outline-secondary">2023.12.31</button>
+                <div class="carousel-item">
+                  <a href="#"
+                    ><img
+                      src="img/air-banner2.jpg"
+                      class="d-block w-100"
+                      alt="a-banner2"
+                  /></a>
                 </div>
-              </form>
-              <form class="hotel-search-room">
-                <div class="hotel-select-pax">
-                  <span>인원</span>
-                  <select class="form-select" aria-label="Default select example">
-                    <option selected>1명</option>
-                    <option value="1">1명</option>
-                    <option value="2">2명</option>
-                    <option value="3">3명</option>                    
-                  </select>
+                <div class="carousel-item">
+                  <a href="#"
+                    ><img
+                      src="img/air-banner3.jpg"
+                      class="d-block w-100"
+                      alt="a-banner3"
+                  /></a>
                 </div>
-                <div class="hotel-select-room">
-                  <span>객실</span>
-                  <select class="form-select" aria-label="Default select example">
-                    <option selected>1개</option>
-                    <option value="1">1개</option>
-                    <option value="2">2개</option>
-                    <option value="3">3개</option>                    
-                  </select>
+                <div class="carousel-item">
+                  <a href="#"
+                    ><img
+                      src="img/air-banner4.jpg"
+                      class="d-block w-100"
+                      alt="a-banner4"
+                  /></a>
                 </div>
-              </form>
-              <form class="hotel-search-submit">
-                <input type="submit" value="호텔 검색" onclick="return false;">
-              </form>
+                <div class="carousel-item">
+                  <a href="#"
+                    ><img
+                      src="img/air-banner5.jpg"
+                      class="d-block w-100"
+                      alt="a-banner5"
+                  /></a>
+                </div>
+                <div class="carousel-item">
+                  <a href="#"
+                    ><img
+                      src="img/air-banner6.jpg"
+                      class="d-block w-100"
+                      alt="a-banner5"
+                  /></a>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
           </div>
 
-          <div class="hotel-modal">
-            <input class="hotel-modal-input" type="text" placeholder="관광지명을 입력하세요" required>
-            <table class="hotel-table">
+          <div class="dep-arr-modal">
+            <input
+              id="dep-arr-modal-input"
+              type="text"
+              placeholder="도시명을 입력하세요"
+              required
+            />
+            <table class="dep-arr-table">
               <tr>
                 <th>일본</th>
                 <th>동남아</th>
@@ -373,7 +318,7 @@
                   </ul>
                 </td>
                 <td>
-                    <ul class="list">
+                  <ul class="list">
                     <a><li>런던</li></a>
                     <a><li>로마</li></a>
                     <a><li>파리</li></a>
@@ -382,7 +327,7 @@
                   </ul>
                 </td>
                 <td>
-                    <ul class="list">
+                  <ul class="list">
                     <a><li>괌</li></a>
                     <a><li>사이판</li></a>
                     <a><li>시드니</li></a>
@@ -390,22 +335,267 @@
                     <a><li>웰링턴</li></a>
                   </ul>
                 </td>
-              </tr>           
+              </tr>
             </table>
-            <button class="hotelX">X</button>
+            <button class="depX">X</button>
           </div>
-        </div>
 
-      </section>  
+          <!-- 달력 -->
+          <div class="air-calendar">
+            <div class="calendar-header">
+              <div class="calendar-nav">
+                <button class="calendar-nav-btn go-prev" onclick="prevMonth()">
+                  &lt;
+                </button>
+                <div class="year-month"></div>
+                <button class="calendar-nav-btn go-next" onclick="nextMonth()">
+                  &gt;
+                </button>
+                <button class="X">X</button>
+              </div>
+            </div>
 
+            <div class="calendar-main">
+              <div class="days">
+                <div class="day">일</div>
+                <div class="day">월</div>
+                <div class="day">화</div>
+                <div class="day">수</div>
+                <div class="day">목</div>
+                <div class="day">금</div>
+                <div class="day">토</div>
+              </div>
+              <div class="dates"></div>
+            </div>
+          </div>
+        </section>
 
+        <!-- 호텔 -->
+        <section id="hotel-page">
+          <div class="inner-hotel-page">
+            <div
+              id="carouselExampleAutoplaying2"
+              class="carousel slide hotel-left-aside"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner2">
+                <div class="carousel-item active">
+                  <a href="#"
+                    ><img
+                      src="img/hotel-banner1.jpg"
+                      class="d-block w-100"
+                      alt="h-banner1"
+                  /></a>
+                </div>
+                <div class="carousel-item">
+                  <a href="#"
+                    ><img
+                      src="img/hotel-banner2.jpg"
+                      class="d-block w-100"
+                      alt="h-banner2"
+                  /></a>
+                </div>
+                <div class="carousel-item">
+                  <a href="#"
+                    ><img
+                      src="img/hotel-banner3.jpg"
+                      class="d-block w-100"
+                      alt="h-banner3"
+                  /></a>
+                </div>
+                <div class="carousel-item">
+                  <a href="#"
+                    ><img
+                      src="img/hotel-banner4.jpg"
+                      class="d-block w-100"
+                      alt="h-banner4"
+                  /></a>
+                </div>
+                <div class="carousel-item">
+                  <a href="#"
+                    ><img
+                      src="img/hotel-banner5.jpg"
+                      class="d-block w-100"
+                      alt="h-banner5"
+                  /></a>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleAutoplaying2"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleAutoplaying2"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
 
-      <!-- 프로모션 -->
-      <section id="promotion">
-        <div class="promotion-title">
-          <p>진행중인 프로모션</p>
-        </div>
-        <div class="promotion-link">
+            <div class="hotel-right-bgi">
+              <div class="hotel-right-aside">
+                <p>호텔</p>
+                <form class="hotel-search-city">
+                  <span
+                    ><label for="hotel-select">국가/도시,호텔검색</label></span
+                  ><br />
+                  <button
+                    id="hotel-select"
+                    type="button"
+                    class="btn btn-outline-secondary"
+                  >
+                    국가/도시,호텔명 입력
+                  </button>
+                </form>
+                <form class="hotel-search-date">
+                  <div class="chkin-date">
+                    <span><label for="select-chkin-date">체크인</label></span
+                    ><br />
+                    <button
+                      id="select-chkin-date"
+                      type="button"
+                      class="btn btn-outline-secondary"
+                    >
+                      2023.01.01
+                    </button>
+                  </div>
+                  <i class="fa-solid fa-minus"></i>
+                  <div class="chkout-date">
+                    <span><label for="select-chkout-date">체크아웃</label></span
+                    ><br />
+                    <button
+                      id="select-chkout-date"
+                      type="button"
+                      class="btn btn-outline-secondary"
+                    >
+                      2023.12.31
+                    </button>
+                  </div>
+                </form>
+                <form class="hotel-search-room">
+                  <div class="hotel-select-pax">
+                    <span>인원</span>
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option selected>1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                    </select>
+                  </div>
+                  <div class="hotel-select-room">
+                    <span>객실</span>
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option selected>1개</option>
+                      <option value="2">2개</option>
+                      <option value="3">3개</option>
+                      <option value="4">4개</option>
+                    </select>
+                  </div>
+                </form>
+                <form class="hotel-search-submit">
+                  <input
+                    type="submit"
+                    value="호텔 검색"
+                    onclick="return false;"
+                  />
+                </form>
+              </div>
+            </div>
+
+            <div class="hotel-modal">
+              <input
+                class="hotel-modal-input"
+                type="text"
+                placeholder="관광지명을 입력하세요"
+                required
+              />
+              <table class="hotel-table">
+                <tr>
+                  <th>일본</th>
+                  <th>동남아</th>
+                  <th>미주/캐나다</th>
+                  <th>유럽</th>
+                  <th>대양주/괌/사이판</th>
+                </tr>
+                <tr>
+                  <td>
+                    <ul class="list">
+                      <a><li>도쿄</li></a>
+                      <a><li>오사카</li></a>
+                      <a><li>나고야</li></a>
+                      <a><li>후쿠오카</li></a>
+                      <a><li>오키나와</li></a>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul class="list">
+                      <a><li>푸켓</li></a>
+                      <a><li>방콕</li></a>
+                      <a><li>싱가포르</li></a>
+                      <a><li>발리</li></a>
+                      <a><li>다낭</li></a>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul class="list">
+                      <a><li>호놀룰루</li></a>
+                      <a><li>로스앤젤레스</li></a>
+                      <a><li>샌프란시스코</li></a>
+                      <a><li>뉴욕</li></a>
+                      <a><li>시애틀</li></a>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul class="list">
+                      <a><li>런던</li></a>
+                      <a><li>로마</li></a>
+                      <a><li>파리</li></a>
+                      <a><li>마드리드</li></a>
+                      <a><li>취리히</li></a>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul class="list">
+                      <a><li>괌</li></a>
+                      <a><li>사이판</li></a>
+                      <a><li>시드니</li></a>
+                      <a><li>오클랜드</li></a>
+                      <a><li>웰링턴</li></a>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+              <button class="hotelX">X</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- 프로모션 -->
+        <section id="promotion">
+          <div class="promotion-title">
+            <p>진행중인 프로모션</p>
+          </div>
+          <div class="promotion-link">
             <!-- let card = `<a><div class="card">
               <img src="${`img/${promotionCard[i].name}.jpg`}" class="card-img">
               <div class="card-body">
@@ -413,17 +603,15 @@
                 <p>예약 기간 : 2023.01.01~</p>
               </div>
           </div></a>`; -->
-        </div>
-      </section>
+          </div>
+        </section>
 
-
-
-      <!-- 혜택 -->
-      <section id="benefit">
-        <div class="innerBenefit">
-          <p>주요 혜택</p>
-          <div class="benefit-box">
-            <!-- <a>
+        <!-- 혜택 -->
+        <section id="benefit">
+          <div class="innerBenefit">
+            <p>주요 혜택</p>
+            <div class="benefit-box">
+              <!-- <a>
               <div class="benefit-card">
                 <ul>
                   <img src="${`img/${benefit[i].name}.png`}">
@@ -431,112 +619,136 @@
                 </ul>
               </div>
              </a> -->
-          </div> 
-        </div>
-      </section>
-
-
-
-
-      <!-- notice -->
-      <section id="notice-title">  
-        <div class="notice">
-          <p>공지사항</p>
-          <ul>
-            <a><li>[2023년 1월 무이자 할부 안내<span>2023.01.03</span></li></a>
-            <a><li>[2023년 1월부 국내선/국제선 유류할증료 안내]<span>2022.12.30</span></li></a>
-            <a><li>[홈페이지 및 고객 서비스 점검 안내]<span>2022.12.05</span></li></a>
-            <a><li>[개인정보 처리방침 관련 변경 안내]<span>2022.01.02</span></li></a>
-          </ul>
-        </div>
-
-        <div class="telApp">
-          <div class="tel">
-            <p>대표번호 02-1234-5678</p>
-            <p>부산지사 대표번호 : 051-123-4567</p>
-            <p>평일 09시~18시 (토/일요일 및 공휴일 휴무)</p>
+            </div>
           </div>
-          
-          <div class="app-link">
-            <div class="app">
-              <p>앱 다운로드</p>
-              <a class="app-btn" href="#">
-                <i class="fa-brands fa-google-play"></i> Google
-              </a>
-              <a class="app-btn" href="#">
-                <i class="fa-brands fa-apple"></i> App Store
-              </a>
+        </section>
+
+        <!-- notice -->
+        <section id="notice-title">
+          <div class="notice">
+            <p>공지사항</p>
+            <ul>
+              <a
+                ><li>[2023년 1월 무이자 할부 안내<span>2023.01.03</span></li></a
+              >
+              <a
+                ><li>
+                  [2023년 1월부 국내선/국제선 유류할증료 안내]<span
+                    >2022.12.30</span
+                  >
+                </li></a
+              >
+              <a
+                ><li>
+                  [홈페이지 및 고객 서비스 점검 안내]<span>2022.12.05</span>
+                </li></a
+              >
+              <a
+                ><li>
+                  [개인정보 처리방침 관련 변경 안내]<span>2022.01.02</span>
+                </li></a
+              >
+            </ul>
+          </div>
+
+          <div class="telApp">
+            <div class="tel">
+              <p>대표번호 02-1234-5678</p>
+              <p>부산지사 대표번호 : 051-123-4567</p>
+              <p>평일 09시~18시 (토/일요일 및 공휴일 휴무)</p>
             </div>
 
-            <div class="sns-link-btn">        
-              <a class="link-btn">
-                <img src="img/facebook.png">
-              </a>
-              <a class="link-btn">
-                <img src="img/twitter.png">
-              </a>
-              <a class="link-btn">
-                <img src="img/naver.png">
-              </a>
-              <a class="link-btn">
-                <img src="img/kakao-talk.png">
-              </a>
-              <a class="link-btn">
-                <img src="img/youtube.png">
-              </a>
+            <div class="app-link">
+              <div class="app">
+                <p>앱 다운로드</p>
+                <a class="app-btn" href="#">
+                  <i class="fa-brands fa-google-play"></i> Google
+                </a>
+                <a class="app-btn" href="#">
+                  <i class="fa-brands fa-apple"></i> App Store
+                </a>
+              </div>
+
+              <div class="sns-link-btn">
+                <a class="link-btn">
+                  <img src="img/facebook.png" />
+                </a>
+                <a class="link-btn">
+                  <img src="img/twitter.png" />
+                </a>
+                <a class="link-btn">
+                  <img src="img/naver.png" />
+                </a>
+                <a class="link-btn">
+                  <img src="img/kakao-talk.png" />
+                </a>
+                <a class="link-btn">
+                  <img src="img/youtube.png" />
+                </a>
+              </div>
             </div>
-          </div>   
-        </div>      
+          </div>
+        </section>
+      </div>
+      <!-- wrapper -->
+
+      <!-- footer -->
+      <section id="footer">
+        <ul class="footer-menu">
+          <a href="#"> <li>회사소개</li> </a
+          >|
+          <a href="#"> <li>개인정보처리방침</li> </a
+          >|
+          <a href="#"> <li>이용약관</li> </a
+          >|
+          <a href="#"> <li>여행약관</li> </a
+          >|
+          <a href="#"> <li>오시는길</li> </a
+          >|
+          <a href="#">
+            <li>사이트맵</li>
+          </a>
+        </ul>
+        <ul class="company-info">
+          <li>
+            <small>서울시 강동구 천호대로 157길 14, 6층(천호동,나비빌딩)</small>
+          </li>
+          |
+          <li><small>㈜여행홈페이지 대표이사 홍길동</small></li>
+          |
+          <li><small>사업자등록번호 123-45-67890</small></li>
+          |
+          <li><small>관광사업자번호 제 2023-123456호</small></li>
+        </ul>
+        <ul class="company-info2">
+          <li><small>여행자 배상책임보험 15억원 가입</small></li>
+          |
+          <li><small>일반여행업 보증금외 15억원 가입</small></li>
+        </ul>
+        <ul class="company-fax-mail">
+          <li><small>팩스: 02-123-4567</small></li>
+          |
+          <li><small>이메일 : abc@tour.com</small></li>
+        </ul>
+        <ul class="copyright">
+          <li>
+            <small>COPYRIGHTⓒ TOUR SERVICE INC. ALL RIGHTS RESERVED</small>
+          </li>
+          |
+        </ul>
       </section>
     </div>
-    <!-- wrapper -->
 
-
-    <!-- footer -->
-    <section id="footer">
-      <ul class="footer-menu">
-        <a href="#">
-          <li>회사소개</li>
-        </a>|
-        <a href="#">
-          <li>개인정보처리방침</li>
-        </a>|
-        <a href="#">
-          <li>이용약관</li>
-        </a>|
-        <a href="#">
-          <li>여행약관</li>
-        </a>|
-        <a href="#">
-          <li>오시는길</li>
-        </a>|
-        <a href="#">
-          <li>사이트맵</li>
-        </a>
-      </ul>
-      <ul class="company-info">
-        <li><small>서울시 강동구 천호대로 157길 14, 6층(천호동,나비빌딩)</small></li>|
-        <li><small>㈜여행홈페이지 대표이사 홍길동</small></li>|
-        <li><small>사업자등록번호 123-45-67890</small></li>|
-        <li><small>관광사업자번호 제 2023-123456호</small></li>
-      </ul>
-      <ul class="company-info2">
-        <li><small>여행자 배상책임보험 15억원 가입</small></li>|
-        <li><small>일반여행업 보증금외 15억원 가입</small></li>
-      </ul>
-      <ul class="company-fax-mail">
-        <li><small>팩스: 02-123-4567</small></li>|
-        <li><small>이메일 : abc@tour.com</small></li>
-      </ul>
-      <ul class="copyright">
-        <li><small>COPYRIGHTⓒ TOUR SERVICE INC. ALL RIGHTS RESERVED</small></li>|
-      </ul>
-    </section>
-
-  </div>
-  
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
-  <script src="js/main.js"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.2.min.js"
+      integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
